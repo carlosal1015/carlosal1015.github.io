@@ -6,7 +6,9 @@
   "dependencies": {
     "magnific-popup": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
