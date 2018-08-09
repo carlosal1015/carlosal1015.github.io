@@ -1,0 +1,117 @@
+[
+  
+    {
+      "title"    : "Markdown Cheatsheet",
+      "category" : "",
+      "tags"     : "tag-name-one, tag-name-two",
+      "url"      : "/writing/markdown-cheatsheet/",
+      "date"     : "2015-11-25 07:00:00 -0500",
+      "content"   : "[\n  {% for post in site.posts %}\n    {\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"category\" : \"{{ post.category }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date }}\",\n      \"content\"   : {{ page.content | jsonify }}\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n  ,\n  {% for page in site.pages %}\n   {\n     {% if page.title != nil %}\n        \"title\"    : \"{{ page.title | escape }}\",\n        \"category\" : \"{{ page.category }}\",\n        \"tags\"     : \"{{ page.tags | join: ', ' }}\",\n        \"url\"      : \"{{ site.baseurl }}{{ page.url }}\",\n        \"date\"     : \"{{ page.date }}\",\n        \"content\"   : {{ page.content | jsonify }}\n     {% endif %}\n   } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n]"
+    } ,
+  
+    {
+      "title"    : "Multiple Galleries",
+      "category" : "cat03",
+      "tags"     : "tag-name-one, tag-name-two",
+      "url"      : "/writing/multiple-galleries/",
+      "date"     : "2015-11-23 07:00:00 -0500",
+      "content"   : "[\n  {% for post in site.posts %}\n    {\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"category\" : \"{{ post.category }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date }}\",\n      \"content\"   : {{ page.content | jsonify }}\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n  ,\n  {% for page in site.pages %}\n   {\n     {% if page.title != nil %}\n        \"title\"    : \"{{ page.title | escape }}\",\n        \"category\" : \"{{ page.category }}\",\n        \"tags\"     : \"{{ page.tags | join: ', ' }}\",\n        \"url\"      : \"{{ site.baseurl }}{{ page.url }}\",\n        \"date\"     : \"{{ page.date }}\",\n        \"content\"   : {{ page.content | jsonify }}\n     {% endif %}\n   } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n]"
+    } 
+  
+  ,
+  
+   {
+     
+        "title"    : "error",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/404.html",
+        "date"     : "",
+        "content"   : "<br>\n<br>\n<br>\n\n<div class=\"container\">\n\t<div class=\"row\">\n <div class=\"col-md-10 col-md-offset-1\"> \n<h1>The page you requested <b style=\"color: #ffbb22; text-shadow: 2px 2px rgba(0, 0, 0, .75);\">no longer exists</b> or is <b style=\"color: #ffbb22; text-shadow: 2px 2px rgba(0, 0, 0, .75);\">temporarily unavailable</b>.</h1>\n\n<h3>We apologize for this inconvenience. Please visit the <a href=\"http://www.madforjekyll/github.io/\" style=\"text-shadow: 2px 2px rgba(0, 0, 0, .75);\">MAD4Jekyll</a> homepage or use the links on this page to find the information you need.</h3>\n\n<h3>If you think you reached this page in error, you can also ...</h3>\n\n<h4>Click your browser's Refresh button to try reconnecting to the requested page.</h4>\n<h4>Check the spelling of the URL to make sure the address is correct (capitalization and punctuation are important).</h4>\n<h4>Click your browser's Back button to return to the previous page.</h4>\n<h4>If you have a question or need assistance, please contact @  <a href=\"mailto:mad@ness.com\" data-toggle=\"tooltip\" target=\"_blank\" title=\"Email\" style=\"\nfont-size:1.5em;text-shadow: 2px 2px rgba(0, 0, 0, .75);text-decoration:none;\">\n     <i class=\"fa fa-envelope-o\"></i>\n    </a>.</h4>\n\t\t</div>\n\t</div>\n</div>\n\n<br>\n<br>\n<br>\n"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+        "title"    : "Gallery",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/gallery/",
+        "date"     : "",
+        "content"   : "<html class=\"no-js\" lang=\"en\">\n<head>\n\t<meta content=\"charset=utf-8\">\n\n<h3><a href=\"http://flexslider.woothemes.com/basic-slider-with-caption.html\">FLEXSLIDER</a> is here!!!</h3> \n  \n<!-- CSS -->\n\t<link rel=\"stylesheet\" href=\"../assets/libs/css/flexslider.css\" type=\"text/css\" media=\"screen\" />\n\n</head>\n\n    <body>\n  <!-- slider -->\n    <section class=\"slider\">\n\t<div class=\"flexslider\">\n   <ul class=\"slides\">\n    <li>\n      <img src=\"/assets/owner/slider/bg1.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"/assets/owner/slider/bg2.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"/assets/owner/slider/bg3.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n      </ul>\n</div>\n      </section>\n\n<!-- jQuery -->\n  <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>\n<script src=\"http://code.jquery.com/jquery-1.11.3.min.js\"></script>\n\n  <!-- FlexSlider -->\n  <script defer src=\"../assets/libs/js/jquery.flexslider.js\"></script>\n\n  <script type=\"text/javascript\">\n    $(function(){\n      SyntaxHighlighter.all();\n    });\n    $(window).load(function(){\n      $('.flexslider').flexslider({\n        animation: \"slide\",\n        slideshow: \"false\",\n        slideshowSpeed: \"12000\",\n        pausePlay: \"true\",\n        start: function(slider){\n          $('body').removeClass('loading');\n        }\n      });\n    });\n  </script>\n\n<br>\n<h6>Image Source: <a href=\"https://unsplash.com/photos/YOT6kS8YtEA\">UNSPLASH</a>\n\n\n\n</body></html>\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "About",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/about/",
+        "date"     : "",
+        "content"   : "<h1><p>A few words about MAD4Jekyll</p></h1>\n\n<h3>This site is madly in love with Jekyll builder.</h3> \n\n<br>\n<h4>MAD4Jekyll is hosted by <a href=\"https://github.com/\">Github</a>.</h4>\n\n<h4>It was built with <a href=\"https://github.com/jekyll/\">Jekyll</a>.</h4>\n\n<h4>It is using <a href=\"https://github.com/madforjekyll/madforjekyll.github.io\">MAD4Jekyll</a> theme.</h4>\n\n<h4>The gallery in the respective page was created with <a href=\"http://flexslider.woothemes.com/basic-slider-with-caption.html\">Flexslider</a>.</h4>\n\n<h4>The photos in the blog posts can be zoomed in on click with the help of <a href=\"http://lokeshdhakar.com/project\">Lightbox</a>. </h4>\n\n<h4>The posts can be written and exported as markdown ready for publication with <a href=\"http://dillinger.io/\">Dillinger</a>, a useful online editor.</h4>\n\n<h4>The footnotes popup are rendered with <a href=\"http://www.bigfootjs.com/\">Bigfoot</a> script.</h4>\n\n<h4>All the commits were performed with the help of <a href=\"https://www.sourcetreeapp.com/\">Source Tree</a> app.</h4>\n\n<br>\n<h6><p>Image Source: <a href=\"https://unsplash.com/photos/oMpAz-DN-9I/\">Unsplash</a></p></h6>\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "Search",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/search/",
+        "date"     : "",
+        "content"   : "<style type=\"text/css\">\n            \n      #search-input {\n        display: inline-block;\n        color: #008989;\n        background-color: #30292b;\n        border-color: #223333;\n        padding: .5em;\n        width: 100%;\n        font-size: 0.8em;\n      }\n        \n         #search-input:focus {\n        display: inline-block;\n        color: #008989;\n        background-color: #30292b;\n        border-color: #223333;\n        border-width: thick;\n        border-style: outset;\n        box-shadow: -1px 1px 5px 5px #624747;\n        outline: 0;\n        width: 100%;\n        font-size: 0.8em;\n              }\n\n    </style>\n\n<!-- Html Elements for Search -->\n<input type=\"text\" id=\"search-input\" placeholder=\"Enter keywords...\">\n<ul id=\"results-container\" style=\"list-style-type: none;\"></ul>    \n\n<!-- Script pointing to jekyll-search.js -->\n<script src=\"/assets/libs/js/jekyll-search.js\" type=\"text/javascript\"></script>\n\n\n    <script type=\"text/javascript\">\n      SimpleJekyllSearch({\n        searchInput: document.getElementById('search-input'),\n        resultsContainer: document.getElementById('results-container'),\n        json: '/pages/search/search.json',\n        searchResultTemplate: '<li><a href=\"{url}\" title=\"{desc}\">{title}</a></li>',\n        noResultsText: 'No results found',\n        limit: 10,\n        fuzzy: true,\n        exclude: ['Welcome']\n      })\n    </script>\n\n<br>\n  <div id=\"tags\">\n  \t<h5>tag cloud</h5>\n   \n\n <span class=\"site-tag\">\n    <a href=\"/writing/tag/tag-name-one/\"\n        style=\"font-size: 88%\">\n            tag name one (2)\n    </a>\n</span>&nbsp;\n <span class=\"site-tag\">\n    <a href=\"/writing/tag/tag-name-two/\"\n        style=\"font-size: 88%\">\n            tag name two (2)\n    </a>\n</span>\n\n</div>\n\n\n<style>\n.site-tag a {\n    display: inline-block;\n    margin-right: 12px;\n}\n</style>\n\n<br>\n  <div id=\"categories\">\n  \t<h5>categories</h5>\n   \n\n <span class=\"site-category\">\n    <a href=\"/writing/category/cat01/\">\n            cat01 (1)\n    </a>\n</span>&nbsp;\n <span class=\"site-category\">\n    <a href=\"/writing/category/cat02/\">\n            cat02 (1)\n    </a>\n</span>&nbsp;\n <span class=\"site-category\">\n    <a href=\"/writing/category/cat03/\">\n            cat03 (1)\n    </a>\n</span>\n\n</div>\n\n\n<style>\n.site-category a {\n    display: inline-block;\n    margin-right: 12px;\n}\n</style>\n\n<br>\n<h6>Image Source: <a href=\"https://source.unsplash.com/NuE8Nu3otjo\">UNSPLASH</a></h6>\n\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "MADness",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/index.html",
+        "date"     : "",
+        "content"   : "<html class=\"no-js\" lang=\"en\">\n<head>\n\t<meta content=\"charset=utf-8\">\n\n<!-- CSS -->\n\t<link rel=\"stylesheet\" href=\"/assets/libs/css/intro.css\" type=\"text/css\" media=\"screen\" />\n\t<link rel=\"stylesheet\" href=\"/assets/libs/css/flexslider.css\" type=\"text/css\" media=\"screen\" />\n\n<!-- jQuery -->\n  <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>\n\n  <!-- FlexSlider -->\n  <script defer src=\"/assets/libs/js/jquery.flexslider.js\"></script>\n\n<!-- Modernizr -->\n  <script src=\"/assets/libs/js/modernizr.js\"></script>\n\n  <!-- Back To Top -->\n  <script type=\"text/javascript\">\n    $(function(){\n      SyntaxHighlighter.all();\n    });\n    $(window).load(function(){\n      $('.flexslider').flexslider({\n        animation: \"slide\",\n        slideshow: false,\n        slideshowSpeed: 12000,\n        pausePlay: true,\n        start: function(slider){\n          $('body').removeClass('loading');\n        }\n      });\n    });\n  </script>\n\n</head>\n\n<body>\n\n <!-- intro -->\n<div class=\"intro\">\n  <div class=\"row\">\n\n        <div class=\"col-md-left-cntct\">\n\n<h2>Welcome to MADness!</h2>\n     \n<h3>'MAD4Jekyll' is a theme for <a href=\"https://github.com/jekyll/\">Jekyll</a>.</h3>\n<br>\n<h4>It is based on <a href=\"http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/\">Clean Blog</a> theme by <a href=\"http://startbootstrap.com/\">Start Bootstrap</a>.\n<br><br><br>\n<b>Features</b>: \n<br><br>-- Integrated slider with captions from <a href=\"http://flexslider.woothemes.com/basic-slider-with-caption.html\">Flexslider</a>.\n<br><br>-- Back To Top arrow.\n<br><br>-- A separate section for <a href=\"/writing/\">'blogging'</a>.\n<br><br>-- A separate section for <a href=\"/gallery/\">'galleries'</a>, beside the featured one at the homepage.</h4>\n        </div>  \n\n\n        <div class=\"col-md-right-cntct\">\n    \n  <ul class=\"faul\">\n<p class=\"lead\"><h4>Links</h4></p>\n                      \n                    <li>\n <a href=\"https://twitter.com/MAD4Jekyll\"  data-toggle=\"tooltip\" title=\"Twiiter\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n       <span class=\"fa-stack fa-lg\">\n           <i class=\"fa fa-circle fa-stack-2x\"></i>\n               <i class=\"fa fa-twitter fa-stack-1x fa-inverse\"></i>\n                            </span>\n                        </a>\n                    </li>\n                    \n\n\n                    \n                    <li>\n                        <a href=\"https://www.facebook.com/MAD4Jekyll\" data-toggle=\"tooltip\" title=\"Facebook\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n         <span class=\"fa-stack fa-lg\">\n           <i class=\"fa fa-circle fa-stack-2x\"></i>\n            <i class=\"fa fa-facebook fa-stack-1x fa-inverse\"></i>\n                     </span>\n                        </a>\n\n                    </li>\n                    \n\n                    \n                    <li>\n   <a href=\"https://github.com/MAD4Jekyll\" data-toggle=\"tooltip\" title=\"Github\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n         <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i>\n              <i class=\"fa fa-github fa-stack-1x fa-inverse\"></i>\n                     </span>\n                        </a>\n                    </li>\n                   \n\n\n                    <li>\n   <a href=\"https://instagram.com/MAD4Jekyll\" data-toggle=\"tooltip\" title=\"Instagram\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n         <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i>\n              <i class=\"fa fa-instagram fa-stack-1x fa-inverse\"></i>\n                     </span>\n                        </a>\n                    </li>\n                   \n\n\n                    <li>\n   <a href=\"https://flickr.com/photos/MAD4Jekyll\" data-toggle=\"tooltip\" title=\"Flickr\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n         <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i>\n              <i class=\"fa fa-flickr fa-stack-1x fa-inverse\"></i>\n                     </span>\n                        </a>\n                    </li>\n                   \n\n\n                    <li>\n   <a href=\"https://500px.com/MAD4Jekyll\" data-toggle=\"tooltip\" title=\"500px\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n         <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i>\n              <i class=\"fa fa-500px fa-stack-1x fa-inverse\"></i>\n                     </span>\n                        </a>\n                    </li>\n                   \n\n\n                    <li>\n   <a href=\"http://MAD4Jekyll.deviantart.com\" data-toggle=\"tooltip\" title=\"Deviantart\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n         <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i>\n              <i class=\"fa fa-deviantart fa-stack-1x fa-inverse\"></i>\n                     </span>\n                        </a>\n                    </li>\n                   \n\n\n     <li>\n    <a href=\"mailto:mad@ness.com\" data-toggle=\"tooltip\" target=\"_blank\" title=\"Email\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n      <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i> \n              <i class=\"fa fa-envelope-o fa-stack-1x fa-inverse\"></i></span>\n    </a> </li>\n\n    \n                </ul>\n\n\n         </div>  \n \n </div>\n</div>\n\n\n<!-- slider -->\n\n\t<div class=\"flexslider\" style=\"display:none;\">\n  <ul class=\"slides\">\n    <li>\n      <img src=\"/assets/owner/slider/bg1.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"/assets/owner/slider/bg2.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"/assets/owner/slider/bg3.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n      </ul>\n</div>\n\n\n \n<br>\n<h6><p>Image Source: <a href=\"http://www.wallconvert.com/wallpapers/fantasy/on-cliffs-edge-18900.html\">Wallconvert</a></p></h6>\n\n\n\n\n       </body>\n    </html>\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "Writing",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/writing/",
+        "date"     : "",
+        "content"   : "\n\n\n \n  \n  \n\n\n<div class=\"post-preview\">\n    \n<a href=\"/writing/markdown-cheatsheet/\">\n        \n\t<img src=\"/assets/owner/blog/thumbs/thumb02.png\" style=\"float: left; margin: 8px 10px 0px 10px;\">\n\t\n \n \n        <h2 class=\"post-title\">     Markdown Cheatsheet\n        </h2>\n        \n        <h3 class=\"post-subtitle\">  \n            This is Markdown Cheatsheet for MAD4Jekyll\n        </h3>\n        \n    </a>\n    <p class=\"post-meta\">Posted by MADness on November 25, 2015</p>\n</div>\n \n\n\n \n  \n  \n\n\n<div class=\"post-preview\">\n    \n<a href=\"/writing/multiple-galleries/\">\n        \n\t<img src=\"/assets/owner/blog/thumbs/thumb01.png\" style=\"float: left; margin: 8px 10px 0px 10px;\">\n\t\n \n \n        <h2 class=\"post-title\">     Multiple Galleries\n        </h2>\n        \n        <h3 class=\"post-subtitle\">  \n            A post with multiple galleries arranged with ISOTOPE\n        </h3>\n        \n    </a>\n    <p class=\"post-meta\">Posted by MADness on November 23, 2015</p>\n</div>\n \n<p>&nbsp;</p>\n\n<!-- Pager -->\n\n\n<br>\n<h6>Image Source: <a href=\"https://unsplash.com/photos/8muUTAmcWU4\">UNSPLASH</a>\n\n"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } 
+  
+]
