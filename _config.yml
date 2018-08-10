@@ -5,8 +5,6 @@ description: A Template for Jekyll
 # Files
 baseurl: dist
 pagesdir:
-
-
 # In _config.yml
 defaults:
   -
@@ -14,7 +12,6 @@ defaults:
       path: "dist"
       type: "pages"
     values:
-      layout: "project"
-      author: "Mr. Hyde"
-      category: "project"
-...
+      layout: ""
+      author: ""
+      category: ""
