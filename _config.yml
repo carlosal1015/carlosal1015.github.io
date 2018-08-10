@@ -3,5 +3,5 @@ title: "MADness"
 description: A Template for Jekyll
 
 # Files
-baseurl:
-pagesdir: dist
+baseurl: dist
+pagesdir:
