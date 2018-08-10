@@ -3,8 +3,8 @@ title: "MADness"
 description: A Template for Jekyll
 
 # Files
-baseurl: dist
-pagesdir:
+baseurl:
+pagesdir: dist
 # In _config.yml
 defaults:
   -
