@@ -10,3 +10,5 @@ url: "https://carlosal1015.github.io"
 # Gems
 plugins:
 - jekyll-paginate
+
+exclude: ["README.md"]
