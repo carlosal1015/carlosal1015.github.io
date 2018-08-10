@@ -3,15 +3,5 @@ title: "MADness"
 description: A Template for Jekyll
 
 # Files
-baseurl:
-pagesdir: dist
-# In _config.yml
-defaults:
-  -
-    scope:
-      path: "pages"
-      type: "pages"
-    values:
-      layout: ""
-      author: ""
-      category: ""
+baseurl: "/pages"
+url: https://carlosal1015.github.io/
