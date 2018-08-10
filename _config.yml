@@ -3,5 +3,5 @@ title: "MADness"
 description: A Template for Jekyll
 
 # Files
-baseurl: "pages"
+baseurl: "/pages"
 url: "https://carlosal1015.github.io"
