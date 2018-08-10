@@ -9,7 +9,7 @@ pagesdir: dist
 defaults:
   -
     scope:
-      path: "dist"
+      path: "pages"
       type: "pages"
     values:
       layout: ""
