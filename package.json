@@ -1,29 +1,39 @@
 {
-    "name": "oromion",
-    "version": "1.0.0",
-    "description": "madforjekyll",
-    "main": "Gruntfile.js",
-    "dependencies": {
-        "magnific-popup": "^1.0.0"
-    },
-    "devDependencies": {
-        "grunt": "^1.0.3",
-        "grunt-banner": "^0.6.0",
-        "grunt-contrib-less": "^2.0.0",
-        "grunt-contrib-uglify": "^3.4.0",
-        "grunt-contrib-watch": "^1.1.0"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/sunbliss/sunbliss.github.io.git"
-    },
-    "author": "madness",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/sunbliss/sunbliss.github.io/issues"
-    },
-    "homepage": "https://github.com/sunbliss/sunbliss.github.io#readme"
+  "name": "github-pages-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.24.6",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file": "^0.4.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-inject": "^4.3.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-rev": "^8.1.1",
+    "gulp-rev-manifest-replace": "0.0.6",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.0",
+    "rollup": "^0.56.5",
+    "rollup-plugin-alias": "^1.4.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.3"
+  }
 }
