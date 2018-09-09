@@ -3,7 +3,6 @@ let rev = require('gulp-rev')
 let concat = require('gulp-concat')
 let rename = require('gulp-rename')
 let replace = require('gulp-replace')
-// let replaceRev = require('gulp-rev-manifest-replace')
 let clean = require('gulp-clean')
 let uglify = require('gulp-uglify')
 let autoprefixer = require('gulp-autoprefixer')
@@ -22,11 +21,7 @@ let commonjs = require('rollup-plugin-commonjs')
 let noderesolve = require('rollup-plugin-node-resolve')
 
 let browserSync = require('browser-sync')
-let server = browserSync.create({
-  // ui: {
-  //     port: 3000
-  // }
-})
+let server = browserSync.create({})
 
 let path = require('path')
 
@@ -57,7 +52,8 @@ let rollme = () => rollup
 let dirs = {
   src: resolve('src'),
   temp: resolve('temp'),
-  dist: resolve('/')
+  public: resolve('public'),
+  root: resolve('/')
 }
 
 let paths = {
@@ -70,12 +66,12 @@ let paths = {
     all: dirs.src + '/stylus/**/*.styl'
   },
   pug: {
-    entry: [ dirs.src + '/pug/**/*.pug' , '!' + dirs.src + '/pug/includes', '!' + dirs.src + '/pug/layouts'],
+    entry: [ dirs.src + '/pug/**/*.pug' ,'!' + dirs.src + '/pug/layout.pug',  '!' + dirs.src + '/pug/includes', '!' + dirs.src + '/pug/layouts'],
     all: dirs.src + '/pug/**/*.pug'
   },
   static: {
-    entry: [ dirs.src + '/**/static/**' ],
-    all: dirs.src + '/**/static/**'
+    entry: [ dirs.src + '/**/assets/**' ],
+    all: dirs.src + '/**/assets/**'
   }
 }
 
@@ -85,18 +81,18 @@ let serveClean = done => gulp
 
 let serveJs = done => rollme()
   .then(gen => file('main.js', gen.code, { src: true })
-    .pipe(gulp.dest(dirs.temp))
+    .pipe(gulp.dest(dirs.temp + '/public/js'))
     .pipe(server.stream()))
 
 let serveStylus = done => gulp
   .src(paths.stylus.entry)
   .pipe(stylus())
   .pipe(autoprefixer())
-  .pipe(gulp.dest(dirs.temp))
+  .pipe(gulp.dest(dirs.temp + '/public/css'))
   .pipe(server.stream())
 
 let servePug = done => gulp
-  .src(paths.pug.entry, '!./pug/layout.pug')
+  .src(paths.pug.entry)
   .pipe(pug({
     pretty: true,
     basedir: __dirname + '/src/pug'
@@ -115,7 +111,7 @@ let servePug = done => gulp
 
 let serveStatic = done => gulp
   .src(paths.static.entry, {base: dirs.src})
-  .pipe(gulp.dest(dirs.temp))
+  .pipe(gulp.dest(dirs.temp + '/public/'))
 
 let serveWatch = done => {
   gulp.watch(paths.js.all, serveJs)
@@ -140,14 +136,14 @@ let serveStart = done => {
 let serve = gulp.series(serveClean, serveJs, serveStylus, servePug, serveStatic, serveWatch, serveStart)
 
 let buildClean = done => gulp
-  .src(dirs.dist, { read: false, allowEmpty: true })
+  .src(dirs.public, { read: false, allowEmpty: true })
   .pipe(clean())
 
 let buildJs = done => rollme()
   .then(gen => file('main.js', gen.code, { src: true })
     .pipe(uglify())
     // .pipe(rev())
-    .pipe(gulp.dest(dirs.dist)))
+    .pipe(gulp.dest(dirs.public + '/js')))
 
 let buildStylus = done => gulp
   .src(paths.stylus.entry)
@@ -155,24 +151,20 @@ let buildStylus = done => gulp
   .pipe(autoprefixer())
   .pipe(concat('main.css'))
   .pipe(cssnano())
-  // .pipe(rev())
-  // .pipe(gulp.dest(dirs.dist))
-	// .pipe(rev.manifest())
-  .pipe(gulp.dest(dirs.dist))
+  .pipe(gulp.dest(dirs.public + '/css'))
 
-// let manifest = require('./temp/rev-manifest.json');
 let buildPug = done => gulp
   .src(paths.pug.entry)
   .pipe(pug({
-    pretty: true,
-    basedir: __dirname + '/src/pug'
+    basedir: __dirname + '/src/pug',
+    pretty: true
   }))
   .pipe(inject(gulp.src([
     '**/*.css',
     '**/*.js'
   ], {
-    cwd: dirs.dist,
-    read: false
+    cwd: dirs.public,
+    read: true
   }), {
     addRootSlash: false
   }))
@@ -180,17 +172,19 @@ let buildPug = done => gulp
     minifyJS: true,
     minifyCSS: true,
     removeComments: true,
-    collapseWhitespace: true
+    collapseWhitespace: false
   }))
-  .pipe(gulp.dest(dirs.dist))
+  .pipe(gulp.dest(dirs.root))
 
 let buildStatic = done => gulp
   .src(paths.static.entry, { base: dirs.src })
-  .pipe(gulp.dest(dirs.dist))
+  .pipe(gulp.dest(dirs.public))
 
-let build = gulp.series(buildJs, buildStylus, buildStatic, buildPug)
+let build = gulp.series(buildClean, buildJs, buildStylus, buildStatic, buildPug)
 
-exports.default = serve
-exports.build = build
+
+
+exports.default = serve;
+exports.build = build;
 
 exports.clean = gulp.parallel(serveClean, buildClean)

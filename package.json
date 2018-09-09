@@ -1,11 +1,13 @@
 {
   "name": "github-pages-boilerplate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "deploy": "gh-pages -d build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "build": "gulp build",
+    "add-commit": "git add -A && git commit",
+    "deploy": "npm run build  && npm run add-commit && git push origin master"
   },
   "keywords": [],
   "author": "",
@@ -20,13 +22,13 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-file": "^0.4.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^4.0.0",
     "gulp-inject": "^4.3.1",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "gulp-rev": "^8.1.1",
-    "gulp-rev-manifest-replace": "0.0.6",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify": "^3.0.0",
@@ -35,5 +37,8 @@
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.3"
+  },
+  "dependencies": {
+    "remove": "^0.1.5"
   }
 }
