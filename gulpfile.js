@@ -57,7 +57,7 @@ let rollme = () => rollup
 let dirs = {
   src: resolve('src'),
   temp: resolve('temp'),
-  dist: resolve('dist')
+  dist: resolve('/')
 }
 
 let paths = {
@@ -74,8 +74,8 @@ let paths = {
     all: dirs.src + '/pug/**/*.pug'
   },
   static: {
-    entry: [ dirs.src + '/**/static/*' ],
-    all: dirs.src + '/**/static/*'
+    entry: [ dirs.src + '/**/static/**' ],
+    all: dirs.src + '/**/static/**'
   }
 }
 
@@ -96,9 +96,10 @@ let serveStylus = done => gulp
   .pipe(server.stream())
 
 let servePug = done => gulp
-  .src(paths.pug.entry)
+  .src(paths.pug.entry, '!./pug/layout.pug')
   .pipe(pug({
-    pretty: true
+    pretty: true,
+    basedir: __dirname + '/src/pug'
   }))
   .pipe(inject(gulp.src([
     '**/*.css',
@@ -162,7 +163,10 @@ let buildStylus = done => gulp
 // let manifest = require('./temp/rev-manifest.json');
 let buildPug = done => gulp
   .src(paths.pug.entry)
-  .pipe(pug())
+  .pipe(pug({
+    pretty: true,
+    basedir: __dirname + '/src/pug'
+  }))
   .pipe(inject(gulp.src([
     '**/*.css',
     '**/*.js'
@@ -184,7 +188,7 @@ let buildStatic = done => gulp
   .src(paths.static.entry, { base: dirs.src })
   .pipe(gulp.dest(dirs.dist))
 
-let build = gulp.series(buildClean, buildJs, buildStylus, buildStatic, buildPug)
+let build = gulp.series(buildJs, buildStylus, buildStatic, buildPug)
 
 exports.default = serve
 exports.build = build

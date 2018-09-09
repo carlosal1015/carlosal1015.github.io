@@ -4,12 +4,4 @@ description: A Template for Jekyll
 
 # Files
 baseurl:
-pagesdir: pages
-url: "https://carlosal1015.github.io"
-
-#dependencies
-# Gems
-plugins:
-- jekyll-paginate
-
-exclude: ["README.md"]
+pagesdir: dist
