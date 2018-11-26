@@ -62,12 +62,15 @@ let paths = {
     all: dirs.src + '/js/**/*.js'
   },
   stylus: {
-    entry: [ dirs.src + '/stylus/main.styl', '!' + dirs.src + '/stylus/imports', '!' + dirs.src + '/stylus/components' ],
+    entry: [ dirs.src + '/stylus/main.styl', '!' + dirs.src + '/stylus/themes/**/*.styl' ],
     all: dirs.src + '/stylus/**/*.styl'
   },
   pug: {
-    entry: [ dirs.src + '/pug/**/*.pug' ,'!' + dirs.src + '/pug/layout.pug',  '!' + dirs.src + '/pug/includes', '!' + dirs.src + '/pug/layouts'],
+    entry: [ dirs.src + '/pug/**/*.pug' ,'!' + dirs.src + '/pug/layout.pug',  '!' + dirs.src + '/pug/partials'],
     all: dirs.src + '/pug/**/*.pug'
+  },
+  css:{
+    entry: dirs.public + '/css/main.css'
   },
   static: {
     entry: [ dirs.src + '/**/assets/**' ],
@@ -89,6 +92,11 @@ let serveStylus = done => gulp
   .pipe(stylus())
   .pipe(autoprefixer())
   .pipe(gulp.dest(dirs.temp + '/public/css'))
+  .pipe(cssnano())
+  .pipe(rename({
+    suffix: '.min'
+  }))
+  .pipe(gulp.dest(path.join(dirs.temp + '/public/css')))
   .pipe(server.stream())
 
 let servePug = done => gulp
@@ -109,13 +117,24 @@ let servePug = done => gulp
   .pipe(gulp.dest(dirs.temp))
   .pipe(server.stream())
 
+
+
+// let serveCssMin = done => gulp
+//   .src(dirs.temp + '/public/css/main.css')
+//   .pipe(cssnano())
+//   .pipe(rename({
+//     suffix: '.min'
+//   }))
+//   .pipe(gulp.dest(path.join(dirs.temp + '/public/css')))
+//   .pipe(server.stream())
+
 let serveStatic = done => gulp
   .src(paths.static.entry, {base: dirs.src})
   .pipe(gulp.dest(dirs.temp + '/public/'))
 
 let serveWatch = done => {
   gulp.watch(paths.js.all, serveJs)
-  gulp.watch(paths.stylus.all, serveStylus)
+  gulp.watch(paths.stylus.all,serveStylus)
   gulp.watch(paths.pug.all, servePug)
   gulp.watch(paths.static.all, serveStatic).on('change', server.reload)
   done()
@@ -150,8 +169,15 @@ let buildStylus = done => gulp
   .pipe(stylus())
   .pipe(autoprefixer())
   .pipe(concat('main.css'))
-  .pipe(cssnano())
   .pipe(gulp.dest(dirs.public + '/css'))
+
+let buildCssMin = done => gulp
+  .src(path.join(dirs.public,'/css/main.css'))
+  .pipe(cssnano())
+  .pipe(rename({
+    suffix: '.min'
+  }))
+  .pipe(gulp.dest(path.join(dirs.public + '/css')))
 
 let buildPug = done => gulp
   .src(paths.pug.entry)
@@ -176,11 +202,14 @@ let buildPug = done => gulp
   }))
   .pipe(gulp.dest(dirs.root))
 
+
+
+
 let buildStatic = done => gulp
   .src(paths.static.entry, { base: dirs.src })
   .pipe(gulp.dest(dirs.public))
 
-let build = gulp.series(buildClean, buildJs, buildStylus, buildStatic, buildPug)
+let build = gulp.series(buildClean, buildJs, buildStylus, buildCssMin, buildStatic, buildPug)
 
 
 

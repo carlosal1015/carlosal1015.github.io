@@ -1,8 +1,29 @@
 extends /layout
+block vars 
+  - var title = 'Github Pages Boilerplate v2.1.0'
 block content
-  img(src='/public/assets/images/algorithms-js.png', alt='Onodera JS')
+  img(src='/public/assets/images/evenhold.png', alt='evenhold')
+  .content
+    h1 Github Pages Boilerplate v2.1.0
     
-  h1 github Pages Boilerplate v2
-  
-  p 
-    | This article tries to answer the three most popular questions regarding fontselection in LaTeX. Rather than providing ready-made answers, it tries pri-marily to provide some guidance through the existing documentation.
+    p 
+      | Simple boilerplate para comenzar a crear tu sitio web en  
+      a(href='https://pages.github.com/' target='_blank') github.io 
+      | usando:
+      ul
+        li _ Gulp JS
+        li _ Pug
+        li _ Stylus
+    hr
+    h2 Modo de uso:
+    ul
+      li _ Copia todos los archivos en tu repositorio personal YOUR_USERNAME.github.io, excepto la carpeta oculta .git.
+      li _ Inicia el modo desarrollo con el comando: npm run dev
+      li _ Solo debes editar el contenido de la carpeta 'src'
+      li _ Crea tus carpetas personales dentro de 'views'
+      li _ Despues de editar tu contenido usa el comando: npm run build
+      li _ Por ultimo sube tus archivos a tu repositorio
+    hr
+    p
+      | Creado por 
+      a(href='https://evenhold.github.io' target='_blank') Franz Victorio
