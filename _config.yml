@@ -47,3 +47,9 @@ sass_dir            : _sass
 collections:
   posts:
     output          : true
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
