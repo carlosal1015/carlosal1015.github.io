@@ -42,6 +42,8 @@ plugins_dir         : _plugins
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
+layouts_dir         : _layouts
+sass_dir            : _sass
 collections:
   posts:
     output          : true
