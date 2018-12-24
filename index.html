@@ -1,9 +1,26 @@
 ---
-layout: index
-section-type: index
-sitemap:
-  priority: 1.0
+layout: default
 ---
-<!--
-If you want to have a static message in your intro layout, disable the dynamic-typing in the _config.yml and write here your text
--->
+
+{% for post in paginator.posts %}
+<div class="article-wrapper">
+    <article>
+    {% include article-header.html page=post link=true %}
+        <section class="post-content">
+            {% assign size = post.content | split: site.excerpt_separator | size %}
+            {% if size > 1 %}
+            {{ post.excerpt }}
+            <a class="btn" href="{{ post.url | prepend: site.baseurl }}">{{ site.str_read_more }}</a>
+            {% else %}
+            {{ post.content }}
+            {% endif %}
+        </section>
+    </article>
+</div>
+
+{% if forloop.last != true %}
+<hr/>
+{% endif %}
+{% endfor %}
+
+{% include paginator.html %}

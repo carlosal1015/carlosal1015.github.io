@@ -1,132 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
-	<channel>
-		<title>{ Curso de elementos finitos }</title>
-		<description>Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine.</description>
-		<link>https://carlosal1015.github.io/</link>
-		<atom:link href="https://carlosal1015.github.io//feed.xml" rel="self" type="application/rss+xml" />
-		
-			<item>
-				<title>Welcome to { Personal } Jekyll Theme!</title>
-				
-				
-					<description>&lt;p&gt;Click the view more posts link bellow, to see the currently available post-tutorials to help you get your { Personal } website up and running quicker!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-24T17:56:06-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curso de elementos finitos</title><subtitle>Some descriptions of yourself.</subtitle><author><name>Oromion</name></author><entry><title type="html">Hello, Jekyll and TtskchTheme</title><link href="http://localhost:4000/2015/01/01/hello/" rel="alternate" type="text/html" title="Hello, Jekyll and TtskchTheme" /><published>2015-01-01T00:00:00-05:00</published><updated>2015-01-01T00:00:00-05:00</updated><id>http://localhost:4000/2015/01/01/hello</id><content type="html" xml:base="http://localhost:4000/2015/01/01/hello/">&lt;p&gt;You can use most of standard Markdown features.&lt;/p&gt;
 
-</description>
-				
-				<pubDate>Sat, 27 Jun 2015 00:00:00 -0500</pubDate>
-				<link>https://carlosal1015.github.io//tech/2015/06/27/welcome.html</link>
-				<guid isPermaLink="true">https://carlosal1015.github.io//tech/2015/06/27/welcome.html</guid>
-			</item>
-		
-			<item>
-				<title>Initial setup</title>
-				
-				
-					<description>&lt;p&gt;All features of { Personal } are controlled by setting values to variables that are defined in the
-_config.yml file. Let’s start with the initial variables that you have to set before
-serving your { Personal } website for the first time.&lt;/p&gt;
+&lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
 
-</description>
-				
-				<pubDate>Thu, 25 Jun 2015 00:00:00 -0500</pubDate>
-				<link>https://carlosal1015.github.io//tech/2015/06/25/initial-setup.html</link>
-				<guid isPermaLink="true">https://carlosal1015.github.io//tech/2015/06/25/initial-setup.html</guid>
-			</item>
-		
-			<item>
-				<title>Modifying the Header</title>
-				
-				
-					<description>&lt;p&gt;The intro part of the index page (Header) is consisted of four elements:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;foo&lt;/li&gt;
+  &lt;li&gt;bar
+    &lt;ul&gt;
+      &lt;li&gt;indentation
+        &lt;ul&gt;
+          &lt;li&gt;nesting indentation&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;indentation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;buz&lt;/li&gt;
+&lt;/ul&gt;
 
-</description>
-				
-				<pubDate>Wed, 24 Jun 2015 00:00:00 -0500</pubDate>
-				<link>https://carlosal1015.github.io//tech/2015/06/24/intro-layout-tutorial.html</link>
-				<guid isPermaLink="true">https://carlosal1015.github.io//tech/2015/06/24/intro-layout-tutorial.html</guid>
-			</item>
-		
-			<item>
-				<title>Web app mode</title>
-				
-				
-					<description>&lt;p&gt;You can make your website behave like a native web app in iOS and Android devices
-by providing links for the icons for each resolution:&lt;/p&gt;
+&lt;!--more--&gt;
 
-</description>
-				
-				<pubDate>Mon, 22 Jun 2015 00:00:00 -0500</pubDate>
-				<link>https://carlosal1015.github.io//tech/2015/06/22/web-app-mode.html</link>
-				<guid isPermaLink="true">https://carlosal1015.github.io//tech/2015/06/22/web-app-mode.html</guid>
-			</item>
-		
-			<item>
-				<title>Setting up the Blog</title>
-				
-				
-					<description>&lt;p&gt;A website is truly personal if it hosts your blog as well, this place of the internet
-where you can place your thoughts about anything!&lt;/p&gt;
+&lt;h2 id=&quot;quote&quot;&gt;Quote&lt;/h2&gt;
 
-</description>
-				
-				<pubDate>Sat, 20 Jun 2015 00:00:00 -0500</pubDate>
-				<link>https://carlosal1015.github.io//tech/2015/06/20/blog-tutorial.html</link>
-				<guid isPermaLink="true">https://carlosal1015.github.io//tech/2015/06/20/blog-tutorial.html</guid>
-			</item>
-		
-			<item>
-				<title>Writing posts</title>
-				
-				
-					<description>&lt;h3 id=&quot;creating-a-new-post&quot;&gt;Creating a new post&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;quote&lt;/p&gt;
 
-</description>
-				
-				<pubDate>Fri, 19 Jun 2015 00:00:00 -0500</pubDate>
-				<link>https://carlosal1015.github.io//tech/2015/06/19/writing-posts.html</link>
-				<guid isPermaLink="true">https://carlosal1015.github.io//tech/2015/06/19/writing-posts.html</guid>
-			</item>
-		
-			<item>
-				<title>Adding a life event in the Timeline</title>
-				
-				
-					<description>&lt;p&gt;One of the coolest features of { Personal } is that enables you to tell your life’s story in
-the form of a timeline of photos, dates and text descriptions.&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;nesting quote&lt;/p&gt;
+  &lt;/blockquote&gt;
 
-</description>
-				
-				<pubDate>Fri, 12 Jun 2015 00:00:00 -0500</pubDate>
-				<link>https://carlosal1015.github.io//tech/2015/06/12/timeline-tutorial.html</link>
-				<guid isPermaLink="true">https://carlosal1015.github.io//tech/2015/06/12/timeline-tutorial.html</guid>
-			</item>
-		
-			<item>
-				<title>Modifying the social buttons</title>
-				
-				
-					<description>&lt;p&gt;Social buttons (rendered above the footer) are great for having a small hub with all your social footprint.&lt;/p&gt;
+  &lt;p&gt;quote&lt;/p&gt;
+&lt;/blockquote&gt;
 
-</description>
-				
-				<pubDate>Thu, 11 Jun 2015 00:00:00 -0500</pubDate>
-				<link>https://carlosal1015.github.io//tech/2015/06/11/social-buttons-tutorial.html</link>
-				<guid isPermaLink="true">https://carlosal1015.github.io//tech/2015/06/11/social-buttons-tutorial.html</guid>
-			</item>
-		
-			<item>
-				<title>Modifying the Contact</title>
-				
-				
-					<description>&lt;p&gt;The contact part of the index page is consisted of two elements:&lt;/p&gt;
+&lt;h2 id=&quot;strikethrough&quot;&gt;Strikethrough&lt;/h2&gt;
 
-</description>
-				
-				<pubDate>Wed, 10 Jun 2015 00:00:00 -0500</pubDate>
-				<link>https://carlosal1015.github.io//tech/2015/06/10/contact-tutorial.html</link>
-				<guid isPermaLink="true">https://carlosal1015.github.io//tech/2015/06/10/contact-tutorial.html</guid>
-			</item>
-		
-	</channel>
-</rss>
+&lt;p&gt;&lt;del&gt;Mistaken text.&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;syntax-highlighting&quot;&gt;Syntax highlighting&lt;/h2&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Hello, World!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First Header&lt;/th&gt;
+      &lt;th&gt;Second Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;emoji&quot;&gt;Emoji&lt;/h2&gt;
+
+&lt;p&gt;You can use GitHub flavored emoji :+1:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;&lt;br /&gt;
+It’s not a very good idea to use emoji before &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; because jekyll can’t render emoji in the excerpted content.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;see-also&quot;&gt;See also&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt;&lt;/p&gt;</content><author><name>Oromion</name></author><category term="hello" /><category term="jekyll" /><category term="theme" /><summary type="html">You can use most of standard Markdown features. List foo bar indentation nesting indentation indentation buz</summary></entry></feed>
