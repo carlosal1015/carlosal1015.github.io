@@ -11,27 +11,38 @@
   
 
 
+  <!-- Force HTTPS Start -->
+  <script>
+  // Don't force http when serving the website locally
+  if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+  </script>
+
+  <!-- Force HTTPS End -->
+
+
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine.">
-  <meta name="author" content="John Smith">
+  <meta name="author" content="Oromion">
   <meta name="keywords" content="smith, jones, personal, jekyll, theme">
-  <link rel="canonical" href="/personal-jekyll-theme/404.html">
-  <title>{ John Smith } | 404</title>
+  <link rel="canonical" href="/404.html">
+  <title>{ Curso de elementos finitos } | 404</title>
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
   <!-- Custom CSS -->
-  <link href="/personal-jekyll-theme/css/grayscale.css" rel="stylesheet">
+  <link href="/css/grayscale.css" rel="stylesheet">
   
 
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/personal-jekyll-theme/css/rrssb.css" />
+  <link rel="stylesheet" href="/css/rrssb.css" />
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -39,11 +50,11 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
   
-    <link rel="shortcut icon" type="image/x-icon" href="/personal-jekyll-theme/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
   
 
   
-    <meta http-equiv="refresh" content="20; url=/personal-jekyll-theme/">
+    <meta http-equiv="refresh" content="20; url=/">
   
 
   
@@ -52,16 +63,16 @@
   <!-- iOS Web App mode -->
 
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="apple-touch-icon" sizes="36x36" href="/personal-jekyll-theme/img/web-app/icon-36p.png">
-  <link rel="apple-touch-icon" sizes="48x48" href="/personal-jekyll-theme/img/web-app/icon-48p.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/personal-jekyll-theme/img/web-app/icon-72p.png">
-  <link rel="apple-touch-icon" sizes="96x96" href="/personal-jekyll-theme/img/web-app/icon-96p.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/personal-jekyll-theme/img/web-app/icon-144p.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="/personal-jekyll-theme/img/web-app/icon-192p.png">
+  <link rel="apple-touch-icon" sizes="36x36" href="/img/web-app/icon-36p.png">
+  <link rel="apple-touch-icon" sizes="48x48" href="/img/web-app/icon-48p.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/web-app/icon-72p.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="/img/web-app/icon-96p.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/web-app/icon-144p.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/img/web-app/icon-192p.png">
 
   <!-- Android Web App mode -->
 
-  <link rel="manifest" href="/personal-jekyll-theme/manifest.json">
+  <link rel="manifest" href="/manifest.json">
 
 
 
@@ -97,13 +108,13 @@
         <i class="fa fa-bars"></i>
       </button>
       
-        <a class="navbar-brand" href="/personal-jekyll-theme/">
+        <a class="navbar-brand" href="/">
       
           <div>
             
-              <img src="/personal-jekyll-theme/img/black-lab-glass.ico" alt="">
+              <img src="/img/black-lab-glass.ico" alt="">
             
-            { John Smith }
+            { Curso de elementos finitos }
           </div>
         </a>
     </div>
@@ -115,27 +126,27 @@
           
             <li>
             
-                <a href="/personal-jekyll-theme/#about"> About </a>
+                <a href="/#about"> About </a>
             
             </li>
           
             <li>
             
               
-                <a href="/personal-jekyll-theme/blog/"> Blog </a>
+                <a href="/blog/"> Blog </a>
               
             
             </li>
           
             <li>
             
-                <a href="/personal-jekyll-theme/#timeline"> Timeline </a>
+                <a href="/#timeline"> Timeline </a>
             
             </li>
           
             <li>
             
-                <a href="/personal-jekyll-theme/#contact"> Contact </a>
+                <a href="/#contact"> Contact </a>
             
             </li>
           
@@ -159,7 +170,7 @@
 <h5 id="check-this-out-if-you-want-to-stop-looking-for-pages-that-dont-exist">Check <a href="http://waitbutwhy.com/2013/11/how-to-beat-procrastination.html" target="_blank">this</a> out if you want to stop looking for pages that don’t exist</h5>
 
 
-          <img class="img-responsive center-block fourofour" src="/personal-jekyll-theme/img/labtocat.png" alt="">
+          <img class="img-responsive center-block fourofour" src="/img/labtocat.png" alt="">
 
         </div>
       </div>
@@ -194,7 +205,7 @@
     <p><br><br></p>
 
     <div class="container text-center">
-        <p>Copyright &copy; John Smith 2018</p>
+        <p>Copyright &copy; Oromion 2018</p>
         
         <p style="font-size: 16px;"><a href="https://keybase.io/johnsmith" target="_blank"><i
                 class="fa fa-key"></i> johnsmith on Keybase</a></p>
@@ -234,6 +245,31 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  
+
+  <!-- Google Tracking Id Start -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Google Tracking Id End -->
+
+  
+
+
+
+
+  <!-- Disqus -->
+
+  
+
+  
 
 
 
@@ -244,7 +280,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, '404', 'http://localhost:4000/personal-jekyll-theme/404.html');
+    history.pushState({}, '404', 'https://carlosal1015.github.io//404.html');
   }
 }
 </script>
