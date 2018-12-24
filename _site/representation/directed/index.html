@@ -32,8 +32,8 @@
 
   </script>
 
-  <link rel="canonical" href="http://localhost:4000/representation/directed/">
-  <link rel="alternate" type="application/rss+xml" title="Curso de elementos finitos" href="http://localhost:4000/feed.xml" />
+  <link rel="canonical" href="https://carlosal1015.github.io//representation/directed/">
+  <link rel="alternate" type="application/rss+xml" title="Curso de elementos finitos" href="https://carlosal1015.github.io//feed.xml" />
 </head>
 
   <body>
@@ -184,27 +184,6 @@ If <script type="math/tex">p</script> factorizes over <script type="math/tex">G<
 <p>In other words, all the independencies encoded in <script type="math/tex">G</script> are sound: variables that are <script type="math/tex">d</script>-separated in <script type="math/tex">G</script> are truly independent in <script type="math/tex">p</script>. However, the converse is not true: a distribution may factorize over <script type="math/tex">G</script>, yet have independencies that are not captured in <script type="math/tex">G</script>.</p>
 
 <p>In a way this is almost a trivial statement. If <script type="math/tex">p(x,y) = p(x)p(y)</script>, then this distribution still factorizes over the graph <script type="math/tex">y \rightarrow x</script>, since we can always write it as <span>​<script type="math/tex">p(x,y) = p(x\mid y)p(y)</script></span> with a CPD <span>​<script type="math/tex">p(x\mid y)</script></span> in which the probability of <script type="math/tex">x</script> does not actually vary with <script type="math/tex">y</script>. However, we can construct a graph that matches the structure of <script type="math/tex">p</script> by simply removing that unnecessary edge.</p>
-
-<h3 id="the-representational-power-of-directed-graphs">The representational power of directed graphs</h3>
-
-<p>This raises our last and perhaps most important question: can directed graphs express all the independencies of any distribution <script type="math/tex">p</script>? More formally, given a distribution <script type="math/tex">p</script>, can we construct a graph <script type="math/tex">G</script> such that <script type="math/tex">I(G) = I(p)</script>?</p>
-
-<p>First, note that it is very easy to construct a <script type="math/tex">G</script> such that <script type="math/tex">I(G) \subseteq I(p)</script>. A fully connected DAG <script type="math/tex">G</script> is an I-map for any distribution since <script type="math/tex">I(G) = \emptyset</script>. <label for="dp1" class="margin-toggle">⊕</label><input type="checkbox" id="dp1" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/assets/img/full-bayesnet.png" /><br />A fully connected Bayesian network over four variables. There are no independencies in this model, and it is an I-map for any distribution.</span></p>
-
-<p>A more interesting question is can we find a <em>minimal</em> <script type="math/tex">I</script>-map <script type="math/tex">G</script> for <script type="math/tex">p</script>, i.e. an <script type="math/tex">I</script>-map <script type="math/tex">G</script> such that the removal of even a single edge from <script type="math/tex">G</script> will result in it no longer being an <script type="math/tex">I</script>-map. This is quite easy: we may start with a fully connected <script type="math/tex">G</script> and remove edges until <script type="math/tex">G</script> is no longer an <script type="math/tex">I</script>-map. One way to do this is by following the natural topological ordering of the graph, and removing node ancestors until this is no longer possible; we will revisit this pruning method towards the end of course when performing structure learning.</p>
-
-<p>However, what we are truly interested in is to determine whether the probability <script type="math/tex">p</script> admits a <em>perfect</em> map <script type="math/tex">G</script> for which <script type="math/tex">I(p)=I(G)</script>. Unfortunately, the answer is no. For example, consider the following distribution <script type="math/tex">p</script> over three variables <script type="math/tex">X,Y,Z</script>: we sample <script type="math/tex">X,Y \sim \text{Ber}(0.5)</script> from a Bernoulli distribution, and we set <script type="math/tex">Z = X \;\text{ xor }\; Y</script> (we call this the noisy-xor example). One can check using some algebra <script type="math/tex">\{X \perp Y, Z \perp Y, X \perp Z\} \in I(p)</script> but <script type="math/tex">Z \perp \{Y,X\} \not\in I(p)</script>. Thus, <script type="math/tex">X \rightarrow Z \leftarrow Y</script> is an I-map for <script type="math/tex">p</script>, but none of the 3-node graph structures that we discussed perfectly describes <script type="math/tex">I(p)</script>, and hence this distribution doesn’t have a perfect map.</p>
-
-<p>A related question is whether perfect maps are unique when they exist. Again, this is not the case, as <script type="math/tex">X \rightarrow Y</script> and <script type="math/tex">X \leftarrow Y</script> encode the same independencies, yet form different graphs. More generally, we say that two Bayes nets <script type="math/tex">G_1, G_2</script> are I-equivalent if they encode the same dependencies <script type="math/tex">I(G_1) = I(G_2)</script>.</p>
-
-<p>When are two Bayesian nets I-equivalent? To answer this, let’s return to a simple example with three variables. We say that each of the graphs below have the same <em>skeleton</em>, meaning that if we drop the directionality of the arrows, we obtain the same undirected graph in each case.</p>
-<figure><figcaption>Bayesian networks over three variables</figcaption><img src="/assets/img/3node-bayesnets.png" /></figure>
-<p>The cascade-type structures (a,b) are clearly symmetric and the directionality of arrows does not matter. In fact, (a,b,c) encode exactly the same dependencies. We can change the directions of the arrows as long as we don’t turn them into a V-structure (d). When we do have a V-structure, however, we cannot change any arrows: structure (d) is the only one that describes the dependency <script type="math/tex">X \not\perp Y \mid Z</script>. These examples provide intuitions of the following general results on I-equivalence.</p>
-
-<p><strong>Fact:</strong>
-If <script type="math/tex">G,G'</script> have the same skeleton and the same v-structures, then <script type="math/tex">I(G) = I(G').</script></p>
-
-<p>Again, it is easy to understand intuitively why this is true. Two graphs are I-equivalent is the <script type="math/tex">d</script>-separation between variables is the same. We can flip the directionality of any edge, unless it forms a v-structure, and the <script type="math/tex">d</script>-connectivity of the graph will be unchanged. We refer the reader to the textbook of Koller and Friedman for a full proof.</p>
 
 
 
