@@ -1,14 +1,14 @@
 # site settings
 title: Blog
-subtitle: by HTML5 UP
-email: email@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-#baseurl: "/home" # the subpath of your site, e.g. /blog
-#url: github.io
-author: Me
+subtitle: De Oromion
+email: caznaranl@uni.pe
+description: Sitio web de Oromion.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://carlosal1015.github.io/"
+author: Oromion
 street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
+city: Lima
+state: Lima
 zip_code: 55555
 country: United States of America
 phone: (716) 555-5555

@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Home
-landing-title: 'Hola, mi nombre es Freider'
+landing-title: 'Blog de Oromion'
 description: null
 image: null
 author: null
 show_tile: false
 ---
 
-Y uso Kali Linux.
+Las matemáticas.
