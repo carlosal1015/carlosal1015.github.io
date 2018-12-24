@@ -2,15 +2,7 @@
 layout: post
 title: Introduction
 ---
-Probabilistic graphical modeling is a branch of machine learning that studies how to model real-world phenomena using probability distributions and use these models to make useful predictions about the future.
-
-Building probabilistic models turns out to be a complex and fascinating problem. From a theoretical point of view, this field is built on an elegant foundation that bridges two very different fields of mathematics: probability theory --- which, along with statistics, forms the core of modern machine learning and data analysis --- as well as discrete math --- particularly graph theory and combinatorics. The field also has intriguing connections to philosophy, especially the question of causality.
-
-Probabilistic modeling is also deeply grounded in reality and has countless real-world applications in fields as diverse as medicine, language processing, vision, and physics.
-Most likely, there are several applications currently running on your computer that make use of graphical models. 
-
-This combination of beautiful theory and powerful applications makes graphical models one of the most fascinating topics in modern artificial intelligence and computer science{% sidenote 1 'The 2011 Turing award (considered to be the "Nobel prize of computer science") was recently awarded to [Judea Pearl](http://amturing.acm.org/award_winners/pearl_2658896.cfm) for founding the field of probabilistic graphical modeling.'%}.
-
+Probabilistic graphical modeling is a branch of machine learning that studies how to model real-world phenomena using probability distributions and 
 ## Probabilistic modeling
 
 But what is, exactly, probabilistic modeling? When trying to solve a real-world problem using mathematics, it is very common to define a mathematical model of the world in the form of an equation.
