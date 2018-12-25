@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
     
+    <!-- Load jQuery
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    -->
+    <!--	 Load KaTeX -->
+    <!--
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+     -->
+    
 
     
 
@@ -16,8 +25,10 @@
 
     <title>Hello, Jekyll and TtskchTheme | Curso de elementos finitos</title>
 
-    <meta name="description" content="You can use most of standard Markdown features.List  foo  bar          indentation                  nesting indentation                    indentation       ...">
+    <!-- Load jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
+    <meta name="description" content="You can use most of standard Markdown features.List  foo  bar          indentation                  nesting indentation                    indentation       ...">
     <link rel="shortcut icon" href="/assets/img/ogp.png" type="image/x-icon">
     <link rel="canonical" href="http://localhost:4000/2015/01/01/hello/">
     <link rel="alternate" type="application/atom+xml" title="Curso de elementos finitos" href="/feed.xml" />
@@ -60,7 +71,11 @@
 
 <div class="site-container">
     <div class="site-content">
-        <div class="article-wrapper">
+        <!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+
+<div class="article-wrapper">
     <article>
         
 
@@ -212,6 +227,20 @@ It’s not a very good idea to use emoji before <code class="highlighter-rouge">
 
 <p><a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a></p>
 
+<p>Hola</p>
+
+<p>
+\\[
+ \begin{aligned}
+ \dot{x} & = \sigma(y-x) \\\
+ \dot{y} & = \rho x - y - xz \\\
+ \dot{z} & = -\beta z + xy
+ \end{aligned}
+\\]
+</p>
+
+<p>$a$</p>
+
         </section>
         <footer>
     
@@ -259,6 +288,10 @@ It’s not a very good idea to use emoji before <code class="highlighter-rouge">
                 
                 
                 
+                
+                
+                
+                <li><a class="page-link" href="/node_modules/mathjax/">MathJax</a></li>
                 
                 
                 
@@ -369,6 +402,25 @@ It’s not a very good idea to use emoji before <code class="highlighter-rouge">
 
 
 
+<!--
+<script>
+    $("script[type='math/tex']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return "<span class=\"inline-equation\">" + 
+               katex.renderToString(tex) +
+               "</span>";
+    });
+
+    $("script[type='math/tex; mode=display']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return "<div class=\"equation\">" + 
+               katex.renderToString("\\displaystyle "+tex) +
+               "</div>";
+    });
+</script>
+-->
 
 </body>
 </html>

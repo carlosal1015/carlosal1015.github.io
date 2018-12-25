@@ -91,7 +91,7 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jemoji
-
+# -jekyll-katex
 #
 # Styles: see "_sass/base/_variables.scss"
 #
@@ -104,6 +104,7 @@ include: ["_pages"]
 
 markdown: kramdown
 kramdown:
+  math_engine: mathjax
   input: GFM
   syntax_highlighter: rouge
 
@@ -119,3 +120,6 @@ exclude:
   - LICENSE
   - README.md
   - vendor
+
+#katex:
+#    path_to_js: "./_plugins/katex.min.js"

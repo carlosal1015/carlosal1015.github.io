@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
-gem 'github-pages'
-gem 'jekyll-feed'
-gem 'jemoji'
+
+group :jekyll_plugins do
+	gem 'github-pages'
+	gem 'jekyll-feed'
+	gem 'jemoji'
+end

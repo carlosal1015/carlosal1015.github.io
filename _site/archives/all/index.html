@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
     
+    <!-- Load jQuery
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    -->
+    <!--	 Load KaTeX -->
+    <!--
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+     -->
+    
 
     
 
@@ -16,8 +25,10 @@
 
     <title>All Posts | Curso de elementos finitos</title>
 
-    <meta name="description" content="Some descriptions of yourself.">
+    <!-- Load jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
+    <meta name="description" content="Some descriptions of yourself.">
     <link rel="shortcut icon" href="/assets/img/ogp.png" type="image/x-icon">
     <link rel="canonical" href="http://localhost:4000/archives/all/">
     <link rel="alternate" type="application/atom+xml" title="Curso de elementos finitos" href="/feed.xml" />
@@ -60,7 +71,8 @@
 
 <div class="site-container">
     <div class="site-content">
-        <div class="article-wrapper">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<div class="article-wrapper">
     <article>
         
 
@@ -184,6 +196,10 @@
                 
                 
                 
+                <li><a class="page-link" href="/node_modules/mathjax/">MathJax</a></li>
+                
+                
+                
                 
                 
                 <li><a class="page-link" href="/about/">About</a></li>
@@ -289,6 +305,24 @@
 
 
 
+<!--
+<script>
+    $("script[type='math/tex']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return "<span class=\"inline-equation\">" + 
+               katex.renderToString(tex) +
+               "</span>";
+    });
 
+    $("script[type='math/tex; mode=display']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return "<div class=\"equation\">" + 
+               katex.renderToString("\\displaystyle "+tex) +
+               "</div>";
+    });
+</script>
+-->
 </body>
 </html>
