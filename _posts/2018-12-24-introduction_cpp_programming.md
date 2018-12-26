@@ -16,6 +16,8 @@ int main ()
 }
 {% endhighlight %}
 
+<!--more-->
+
 ## Strikethrough
 
 ~~Mistaken text.~~
