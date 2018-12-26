@@ -1,20 +1,13 @@
-#
-# Basic settings.
-#
-# url: http://localhost:4000
-# baseurl: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://carlosal1015.github.io/"
 author: Oromion
 title: Oromion's blog
 description: Blog about mathematics, TeX and programming.
 avatar: /assets/img/ogp.png
-# favicon: /favicon.ico
 favicon: /assets/img/ogp.png
 language: en
-#
+
 # Icons
-#
 icons:
   rss: true
   email: caznaranl@uni.pe
@@ -26,13 +19,9 @@ icons:
 #  youtube_username: channel/UC0dDIu9Ppa8BMXrNksA5oYA
 
 # Prettify url.
-#
 permalink: pretty
 
-# Scripts.
-
 # Localizations.
-#
 str_next: Next
 str_prev: Prev
 str_read_more: Read more...
@@ -40,40 +29,25 @@ str_search: Search
 str_recent_posts: Recent posts
 str_show_all_posts: Show all posts
 
-#
 # Recent posts.
-#
-recent_posts_num: 10
+recent_posts_num: 5
 
-#
 # Pagination.
-#
 paginate: 10
 paginate_path: page/:num
 
-#
-# Social.
-#
-share_buttons:
-  twitter: true
-  facebook: true # needs ogp.fb.app_id
-  hatena: true
 ogp:
   image_url: //carlosal1015.github.io/assets/img/ogp.png
-#
+
 # Plugins.
-#
 plugins:
   - jekyll-paginate
   - jekyll-feed
   - jemoji
 # -jekyll-katex
-#
-# Styles: see "_sass/base/_variables.scss"
-#
-# !! Danger zone !!
-#
 
+# Styles: see "_sass/base/_variables.scss"
+# !! Danger zone !!
 include: ["_pages"]
 
 markdown: kramdown
@@ -91,8 +65,6 @@ sass:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - README.md
   - vendor
 
 #katex:
