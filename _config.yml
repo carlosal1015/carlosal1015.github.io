@@ -6,51 +6,31 @@
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://carlosal1015.github.io/"
 author: Oromion
-title: Curso de elementos finitos
-description: Some descriptions of yourself.
+title: Oromion's blog
+description: Blog about mathematics, TeX and programming.
 avatar: /assets/img/ogp.png
 # favicon: /favicon.ico
 favicon: /assets/img/ogp.png
-# language: ja
 language: en
-
 #
 # Icons
 #
 icons:
   rss: true
-  email:
-  github: ttskch
-  bitbucket:
-  twitter: ttskch
-  facebook:
-  google_plus:
-  tumblr:
-  behance:
-  dribbble:
-  flickr:
-  instagram:
-  linkedin: # full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange: # full URL
-  steam:
-  wordpress:
-  youtube:
+  email: caznaranl@uni.pe
+  github: carlosal1015
+  twitter: carlosal1015
+  reddit: carlosal1015
+  stack_exchange: https://stackexchange.com/users/9558603/oromion
+  wordpress: blogdeoromion
+#  youtube_username: channel/UC0dDIu9Ppa8BMXrNksA5oYA
 
-#
 # Prettify url.
 #
 permalink: pretty
 
-#
 # Scripts.
-#
-google_analytics: # e.g. UA-000000-01
-disqus:
 
-#
 # Localizations.
 #
 str_next: Next
@@ -76,14 +56,10 @@ paginate_path: page/:num
 #
 share_buttons:
   twitter: true
-  facebook: false # needs ogp.fb.app_id
-  hatena: false
+  facebook: true # needs ogp.fb.app_id
+  hatena: true
 ogp:
-  image_url: //ttskch.github.io/jekyll-ttskch-theme/assets/img/ogp.png
-  fb:
-    admin: # facebook admin id
-    app_id: # facebook application id
-
+  image_url: //carlosal1015.github.io/assets/img/ogp.png
 #
 # Plugins.
 #
@@ -94,8 +70,6 @@ plugins:
 # -jekyll-katex
 #
 # Styles: see "_sass/base/_variables.scss"
-#
-
 #
 # !! Danger zone !!
 #

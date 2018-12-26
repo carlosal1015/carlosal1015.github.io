@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-24T21:45:09-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curso de elementos finitos</title><subtitle>Some descriptions of yourself.</subtitle><author><name>Oromion</name></author><entry><title type="html">Hello, Jekyll and TtskchTheme</title><link href="http://localhost:4000/2015/01/01/hello/" rel="alternate" type="text/html" title="Hello, Jekyll and TtskchTheme" /><published>2015-01-01T00:00:00-05:00</published><updated>2015-01-01T00:00:00-05:00</updated><id>http://localhost:4000/2015/01/01/hello</id><content type="html" xml:base="http://localhost:4000/2015/01/01/hello/">&lt;p&gt;You can use most of standard Markdown features.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-25T20:22:58-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Oromion’s blog</title><subtitle>Blog about mathematics, TeX and programming</subtitle><author><name>Oromion</name></author><entry><title type="html">Hello, Jekyll and TtskchTheme</title><link href="http://localhost:4000/2015/01/01/hello/" rel="alternate" type="text/html" title="Hello, Jekyll and TtskchTheme" /><published>2015-01-01T00:00:00-05:00</published><updated>2015-01-01T00:00:00-05:00</updated><id>http://localhost:4000/2015/01/01/hello</id><content type="html" xml:base="http://localhost:4000/2015/01/01/hello/">&lt;p&gt;You can use most of standard Markdown features.&lt;/p&gt;
 
 &lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
 
@@ -71,10 +71,10 @@
 It’s not a very good idea to use emoji before &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; because jekyll can’t render emoji in the excerpted content.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;e^{i\pi} + 1 = 0&lt;/script&gt;
+
 &lt;h2 id=&quot;see-also&quot;&gt;See also&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Hola&lt;/p&gt;
-
-&lt;p&gt;$a$&lt;/p&gt;</content><author><name>Oromion</name></author><category term="hello" /><category term="jekyll" /><category term="theme" /><summary type="html">You can use most of standard Markdown features. List foo bar indentation nesting indentation indentation buz</summary></entry></feed>
+&lt;p&gt;Hola&lt;/p&gt;</content><author><name>Oromion</name></author><category term="hello" /><category term="jekyll" /><category term="theme" /><summary type="html">You can use most of standard Markdown features. List foo bar indentation nesting indentation indentation buz</summary></entry></feed>
