@@ -43,7 +43,7 @@
     <link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
 </head>
 <body>
-
+    {% include scripts.html %}
 <header class="site-header">
     <div class="inner clearfix">
         {% if site.avatar %}
@@ -118,6 +118,5 @@
 {% if page.permalink == '/search/' %}
 <script src="{{ '/assets/js/search.js' | prepend: site.baseurl }}"></script>
 {% endif %}
-{% include scripts.html %}
 </body>
 </html>
