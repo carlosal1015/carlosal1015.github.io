@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Finite element Method
-tags: c++
-eye_catch: https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg
+categories: fem
+tags: linear-algebra
+eye_catch: https://images.springer.com/sgw/books/medium/9783642332869.jpg
 mathjax: "true"
 ---

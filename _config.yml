@@ -19,12 +19,12 @@ icons:
   youtube: UC0dDIu9Ppa8BMXrNksA5oYA
 
 # Prettify url.
-permalink: pretty
+permalink: pretty # /:categories/:year/:month/:day/:title/
 
 # Localizations.
 str_next: Next
 str_prev: Prev
-str_read_more: Read more...
+str_read_more: Read more ...
 str_search: Search
 str_recent_posts: Recent posts
 str_show_all_posts: Show all posts
