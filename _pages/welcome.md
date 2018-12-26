@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome to Oromion's blog
+title: Welcome
 permalink: /welcome/
 order: 1
 share: false

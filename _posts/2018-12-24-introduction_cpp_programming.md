@@ -7,163 +7,37 @@ eye_catch: https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg
 mathjax: "true"
 ---
 
-{% highlight cpp %}
-#include <stdio.h>
-using namespace std;
-int main ()
-{
-	cout << "Hello World" endl;
-}
-{% endhighlight %}
-
 <!--more-->
 
-## Strikethrough
+# [An overview of computers and programming languages]()
 
-~~Mistaken text.~~
+## Un breve resumen de la historia de las computadoras
+* El primer dispositivo conocido para llevar a cabo cálculos fue el ábaco.
+* En 1642, el filósofo francés y matemático Blaise Pascal inventó un dispositivo de cálculo llamado la Pascalina.
+* Luego en el siglo XVII, Gottfried von Leibniz inventó un dispositivo que podía sumar, restar, multiplicar y dividir
+* En 1819, Joseph Jacquard, un tejedor francés, descubrió que las instrucciones de tejer para sus telares se pueden almacenar en tarjetas con agujeros perforados.
+* A principios y mediados de 1800, Charles Babbage, un matemático inglés y científico físico, diseñó dos máquinas calculadoras: la diferencia entre la máquina diferencial y la máquina analítica.
 
-## Emoji :+1:
-
-> **Note**  
-> It's not a very good idea to use emoji before `<!--more-->`
-
-$$e^{i\pi} + 1 = 0$$
-
-La función derivada es $$a=\sqrt{b}\,$$.
+### Minimal example
 
 {% highlight cpp %}
-#include <stdio.h>
+#include <iostream>
 using namespace std;
-int main ()
+int main()
 {
-	cout << "Hello World" endl;
+	cout << "My first C++ program." << endl;
+	return 0;
 }
 {% endhighlight %}
 
 ## Strikethrough
 
-~~Mistaken text.~~
+~~Mist~~
 
-## Emoji :+1:
+## Mathematics :+1:
 
-> **Note**  
-> It's not a very good idea to use emoji before `<!--more-->`
+Let be $$f\in B(\left[a,b\right])$$ a function such that
 
-$$e^{i\pi} + 1 = 0$$
-
-La función derivada es $$a=\sqrt{b}\,$$.
-
-
-{% highlight cpp %}
-#include <stdio.h>
-using namespace std;
-int main ()
-{
-	cout << "Hello World" endl;
-}
-{% endhighlight %}
-
-## Strikethrough
-
-~~Mistaken text.~~
-
-## Emoji :+1:
-
-> **Note**  
-> It's not a very good idea to use emoji before `<!--more-->`
-
-$$e^{i\pi} + 1 = 0$$
-
-La función derivada es $$a=\sqrt{b}\,$$.
-
-
-{% highlight cpp %}
-#include <stdio.h>
-using namespace std;
-int main ()
-{
-	cout << "Hello World" endl;
-}
-{% endhighlight %}
-
-## Strikethrough
-
-~~Mistaken text.~~
-
-## Emoji :+1:
-
-> **Note**  
-> It's not a very good idea to use emoji before `<!--more-->`
-
-$$e^{i\pi} + 1 = 0$$
-
-La función derivada es $$a=\sqrt{b}\,$$.
-
-
-{% highlight cpp %}
-#include <stdio.h>
-using namespace std;
-int main ()
-{
-	cout << "Hello World" endl;
-}
-{% endhighlight %}
-
-## Strikethrough
-
-~~Mistaken text.~~
-
-## Emoji :+1:
-
-> **Note**  
-> It's not a very good idea to use emoji before `<!--more-->`
-
-$$e^{i\pi} + 1 = 0$$
-
-La función derivada es $$a=\sqrt{b}\,$$.
-
-
-{% highlight cpp %}
-#include <stdio.h>
-using namespace std;
-int main ()
-{
-	cout << "Hello World" endl;
-}
-{% endhighlight %}
-
-## Strikethrough
-
-~~Mistaken text.~~
-
-## Emoji :+1:
-
-> **Note**  
-> It's not a very good idea to use emoji before `<!--more-->`
-
-$$e^{i\pi} + 1 = 0$$
-
-La función derivada es $$a=\sqrt{b}\,$$.
-
-
-{% highlight cpp %}
-#include <stdio.h>
-using namespace std;
-int main ()
-{
-	cout << "Hello World" endl;
-}
-{% endhighlight %}
-
-## Strikethrough
-
-~~Mistaken text.~~
-
-## Emoji :+1:
-
-> **Note**  
-> It's not a very good idea to use emoji before `<!--more-->`
-
-$$e^{i\pi} + 1 = 0$$
-
-La función derivada es $$a=\sqrt{b}\,$$.
+$$f(x) = \int_{-\infty}^\infty
+    \hat f\xi\,e^{2 \pi i \xi x}
+    \,d\xi$$
