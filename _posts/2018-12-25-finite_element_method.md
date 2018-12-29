@@ -23,7 +23,6 @@ Esta serie infinita debe converger a una suma finita. Vectores con longitud fini
 \textbf{Longitud cuadrada } \langle v,w \rangle = 0
 {% endkatex %}
 
-
 ## Hat's functions
 
 {% highlight matlab %}
