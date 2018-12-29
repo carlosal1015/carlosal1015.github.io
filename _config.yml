@@ -44,8 +44,8 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jemoji
-#  - jekyll-multiple-languages-plugin
-# -jekyll-katex
+  - jekyll-katex
+# - jekyll-multiple-languages-plugin
 
 # Styles: see "_sass/base/_variables.scss"
 # !! Danger zone !!
@@ -69,7 +69,11 @@ exclude:
   - vendor
   - Rakefile
 
-#katex:
-#    path_to_js: "./_plugins/katex.min.js"
-
 #languages: ["en", "de", "es"]
+
+katex:
+  js_path: "/assets/js"  # Path used to search for katex.min.js
+  rendering_options:
+    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
+    throw_error: true                       # throwOnError - set to false if you want rendering to output error as text rather than a build error
+    error_color: "#cc0000"                  # errorColor
