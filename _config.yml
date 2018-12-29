@@ -73,4 +73,5 @@ exclude:
   - vendor/ruby/
 #languages: ["en", "de", "es"]
 
-#katex:
+katex:
+  path_to_js: "./assets/js"
