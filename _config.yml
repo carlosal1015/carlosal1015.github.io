@@ -54,9 +54,9 @@ include: ["_pages"]
 
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
   input: GFM
   syntax_highlighter: rouge
+# math_engine: mathjax
 
 excerpt_separator: <!--more-->
 
@@ -65,11 +65,12 @@ sass:
   style: :compressed # or :expanded
 
 exclude:
-  - Gemfile
   - Gemfile.lock
-  - vendor
-  - Rakefile
-
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 #languages: ["en", "de", "es"]
 
-katex:
+#katex:
