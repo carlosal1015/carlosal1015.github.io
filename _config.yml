@@ -41,7 +41,6 @@ ogp:
 
 # Plugins.
 plugins:
-  - jekyll-katex
   - jekyll-paginate
   - jekyll-feed
   - jemoji

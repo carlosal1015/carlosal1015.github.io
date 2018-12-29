@@ -4,7 +4,6 @@ title: Introduction C++ Programming
 tags: algorithms
 categories: cpp
 eye_catch: https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg
-mathjax: "true"
 ---
 
 <!--more-->
@@ -35,9 +34,3 @@ int main()
 ~~Mist~~
 
 ## Mathematics :+1:
-
-Let be $$f\in B(\left[a,b\right])$$ a function such that
-
-$$f(x) = \int_{-\infty}^\infty
-    \hat f\xi\,e^{2 \pi i \xi x}
-    \,d\xi$$
