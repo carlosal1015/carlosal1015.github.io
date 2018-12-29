@@ -19,6 +19,11 @@ Sea {% katex %}\mathbb{R}^\infty{% endkatex %} que contiene todos los vectores {
 
 Esta serie infinita debe converger a una suma finita. Vectores con longitud finita pueden ser sumados, multiplicados por escalares, así ellos forman un espacio vectorial. En este espacio de Hilbert es la forma natural de crecer el número de dimensiones hasta el infinito, y al mismo tiempo mantener la geometría ordinaria de un espacio euclidiano. Las elipses serán elipsoides de dimensión infinita, y rectas perpendiculares serán exactamente como antes. Los vectores $$v$$ y $$w$$ son ortogonales cuando su producto interno es cero:
 
+{% katex display %}
+\textbf{Longitud cuadrada } \langle v,w \rangle = 0
+{% endkatex %}
+
+
 ## Hat's functions
 
 {% highlight matlab %}
