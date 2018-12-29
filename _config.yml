@@ -45,6 +45,7 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jemoji
+
 # - jekyll-multiple-languages-plugin
 
 # Styles: see "_sass/base/_variables.scss"
