@@ -10,3 +10,5 @@ end
 group :development do
   gem 'rake'
 end
+
+gem 'jekyll-admin', group: :jekyll_plugins
