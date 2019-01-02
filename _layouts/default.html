@@ -80,6 +80,7 @@
             </ul>
             <ul class="icons">
                 {% include icons.html icons=site.icons %}
+                {% include kpop.html %}
             </ul>
             <hr class="with-no-margin margin-bottom"/>
 
@@ -119,7 +120,7 @@
 <script src="{{ '/assets/js/search.js' | prepend: site.baseurl }}"></script>
 {% endif %}
 
-<script src="{{ "/assets/js/katex_init.js" | relative_url }}"></script>
+{% include footer.html %}
 
 </body>
 </html>
