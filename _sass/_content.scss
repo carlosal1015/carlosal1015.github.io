@@ -76,8 +76,13 @@
         margin-left: 2em;
     }
 
-    p, ol, ul, dl {
+    p, ol, ul, dl, .math-display {
         line-height: 1.5;
+        margin-bottom: 1em;
+    }
+    .math-display {
+        display: inline-block;
+        width: 100%;
     }
 
     ol, ul {

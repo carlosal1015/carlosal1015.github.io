@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
 <head>
+    {% include head.html %}
     {% capture title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endcapture %}
 
     {% include page-url-resolver.html page=page %}
@@ -40,16 +41,9 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
 
     <link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
-    
-    <!-- KaTeX -->
-	{% if site.theme_settings.katex and page.id %}
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.css" integrity="sha384-xNwWFq3SIvM4dq/1RUyWumk8nj/0KFg4TOnNcfzUU4X2gNn3WoRML69gO7waf3xh" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.js" integrity="sha384-UP7zD+aGyuDvxWQEDSRYcvoTxJSD82C6VvuEBktJZGo25CVhDstY9sCDHvyceo9L" crossorigin="anonymous"></script>
-    {% endif %}
-
 </head>
 <body>
-
+    {% include footer.html %}
     <header class="site-header">
     <div class="inner clearfix">
         {% if site.avatar %}
@@ -110,7 +104,7 @@
 
 <footer class="site-footer">
     <div class="inner">
-        <span>Powered by Oromion.</a></span>
+        <span>Powered by KaTeX and Oromion.</a></span>
     </div>
 </footer>
 

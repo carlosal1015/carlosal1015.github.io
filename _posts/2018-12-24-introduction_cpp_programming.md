@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Introduction C++ Programming
 tags: algorithms
 categories: cpp
