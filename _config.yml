@@ -21,6 +21,8 @@ icons:
 # Prettify url.
 permalink: pretty # /:categories/:year/:month/:day/:title/
 
+katex: true # Enable if using math markup
+
 # Localizations.
 str_next: Next
 str_prev: Prev
@@ -55,7 +57,6 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-# math_engine: mathjax
 
 excerpt_separator: <!--more-->
 
@@ -71,6 +72,3 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 #languages: ["en", "de", "es"]
-
-katex:
-  path_to_js: "./assets/js"

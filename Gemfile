@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
-
-gem "execjs", "~> 2.7"
+gemspec
 
 group :jekyll_plugins do
-	gem 'jekyll-katex'
 	gem 'github-pages'
 	gem 'jekyll-feed'
 	gem 'jemoji'
