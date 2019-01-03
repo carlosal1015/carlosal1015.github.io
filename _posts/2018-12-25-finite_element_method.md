@@ -40,7 +40,7 @@ Nuestro espacio de Hilbert se convirtió en *espacio funcional*. Los vectores so
 La misma idea de reemplazar la sumatoria por integración produce su **producto interno de dos funciones**: Si $$f(x)=\sin x$$ y $$g(x)=\cos x$$, entonces su producto interno es
 
 $$
-\tag{3}\langle f,g\rangle={\int}_{0}^{2\pi}f(x)g(x)\mathrm{d}x=\int_{0}^{2\pi}\sin x\cos x\mathrm{d}x=0.
+\tag{3}\langle f,g\rangle=\int_{0}^{2\pi}f(x)g(x)\mathrm{d}x=\int_{0}^{2\pi}\sin x\cos x\mathrm{d}x=0.
 $$
 
 Esto exactamente como el producto de interno de vectores $$f^Tg$$. Esto mantiene relación con la longitud dada por $$\langle f,f\rangle=\|f\|^2$$. La desigualdad de Schwarz se mantiene satisfecha: $$\vert\langle f,g \rangle\vert\le \|f\|\|g\|$$. Por supuesto, dos funciones como $$\sin x$$ y $$\cos x$$, cuyo producto interno es cero, deberán ser llamadas ortogonales. Ellas son incluso ortonormales luego de dividir por su longitud $$\sqrt{\pi}$$.
