@@ -6,5 +6,4 @@ group :jekyll_plugins do
 	gem 'jemoji'
 	gem 'jekyll-admin'
 end
-
-#	gem 'jekyll-multiple-languages-plugin'
+# gem 'jekyll-multiple-languages-plugin'
