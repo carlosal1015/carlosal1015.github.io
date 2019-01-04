@@ -1,0 +1,2 @@
+* Las imágenes cargarlas de forma local, si la conexión no es buena no se va a poder visualizar.
+* Cargar KaTeX de manera remota, tratar de no usar la web.
