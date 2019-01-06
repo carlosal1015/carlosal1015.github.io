@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Cuerpos gaussianos y cadenas de Markov
-categories: fem
-tags: linear-algebra
+categories: math
+tags: algebra UNI elliptic-curves markov-chain
 eye_catch: http://mateapliunt.edu.pe/xii_fast/imagenes/map1.png
 ---
 
@@ -24,7 +24,7 @@ $$
 E(\mathbb{Q})\approx \overbrace{\mathbb{Z}\oplus\cdots\oplus\mathbb{Z}}^{r\text{ veces}}\oplus\frac{\mathbb{Z}}{p_1^{\lambda_1}\mathbb{Z}}\oplus\cdots\frac{\mathbb{Z}}{p_s^{\lambda_s}}
 $$
 
-En 1922, el matemático británico (1888-1972), representante estudioso de la teoría de números, demostró que el conjunto de puntos racionales de una curva elíptica $$E(\mathbb{Q})$$ es un grupo abeliano generado por un número finito de puntoss racionales, años más tarde, en 1928, el matemático francés André Weil (1906-1998) obtuvo un resultado que extendió la validez del teorema anterior sobre el dominio de cualquier cuerpos numérico.
+En 1922, el matemático británico (1888-1972), representante estudioso de la teoría de números, demostró que el conjunto de puntos racionales de una curva elíptica $$E(\mathbb{Q})$$ es un grupo abeliano generado por un número finito de puntos racionales, años más tarde, en 1928, el matemático francés André Weil (1906-1998) obtuvo un resultado que extendió la validez del teorema anterior sobre el dominio de cualquier cuerpos numérico.
 
 
 ## Curvas elípticas
@@ -55,7 +55,7 @@ $$
 
 con $$\{a,b,c,d\}\subset\mathbb{K}$$ que fueron estudiados por los matemáticos griegos, y en particular, por Diofanto de Alejandría.
 
-Muy bien, ya hemos presentando a las **curvass elípticas**.
+Muy bien, ya hemos presentando a las **curvas elípticas**.
 
 Como consecuencia del resultado de Weil, se tiene que cualquier solución racional de $$E(\mathbb{Q})$$ divide en dos partes, una parte *libre* y otras *con torsión*.
 
@@ -80,7 +80,7 @@ $$
 
 entonces un punto $$P=(x,y)$$ de orden finito cumple que $$y=0$$.
 
-## Pregunta natural: ¿Será posible valida estos resultados en un cuerpo gaussiano?
+> Pregunta natural: ¿Será posible valida estos resultados en un cuerpo gaussiano?
 
 Claro, el campo de los números *conmensurables* comparte muchas propiedades que el de los cuerpos gaussianos.
 
@@ -100,4 +100,6 @@ $$
 x^3-\frac{3}{2}x^2+\frac{1}{2}x=0
 $$
 
-## Qué es una curva elíptica singular
+## New Fractals as Images of Fractals Classic under a Complex Polinomial Transformation
+
+La justificación rigurosa de la existencia de conjuntos fractales clásicos tales como el Conjunto de Cantar, Triángulo de Sierpinski, Alfombra de Serpienski, Curva de Koch, etc, se fundamenta en base al Operador de Hutchinsone
