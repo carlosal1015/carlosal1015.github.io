@@ -1,2 +1,2 @@
-* Las imágenes cargarlas de forma local, si la conexión no es buena no se va a poder visualizar.
-* Cargar KaTeX de manera remota, tratar de no usar la web.
+* Load the images from local since if the conecction is bad, then we do not visualize the pictures.
+* Load KaTeX from local.
