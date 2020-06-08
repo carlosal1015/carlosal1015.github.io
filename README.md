@@ -36,7 +36,7 @@ $ rvm get stable
 
 ### Installation
 ```sh
-$ bundle install --path vendor/bundle
+$ bundle config set path 'vendor/bundle'
 $ bundle update --bundler # Update bundler
 $ bundle update # Update all gems, do not recommended.
 $ gem cleanup # Remove old version of dependencies
