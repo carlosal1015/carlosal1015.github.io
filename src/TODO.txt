@@ -1,0 +1,2 @@
+* Load the images from local since if the conecction is bad, then we do not visualize the pictures.
+* Load KaTeX from local.
