@@ -28,17 +28,19 @@ installation in your system.
 - [RVM is not a function, selecting rubies with 'rvm use ...' will not work.](https://stackoverflow.com/a/27990042/9302545)
 - [RVM ArchWiki](https://wiki.archlinux.org/index.php/RVM)
 
+## Arch's RubyLang set up
+
 ```console
 $ curl -L get.rvm.io > rvm-install
 $ bash < ./rvm-install
-$ source /home/carlosal1015/.rvm/scripts/rvm
+$ source ~/.rvm/scripts/rvm
 $ deepin-editor .zshrc
 $ source .zshrc
 $ gem install --user-install bundle
 $ rvm get stable
 ```
 
-## Installation
+## Build
 
 ```console
 $ bundle config set path 'vendor/bundle' # Once time
