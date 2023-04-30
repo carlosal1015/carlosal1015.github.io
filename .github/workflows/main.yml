@@ -21,9 +21,8 @@ jobs:
             ${{ runner.os }}-gems-
 
       - name: Jekyll
-        uses: helaili/jekyll-action@2.2.0
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+        uses: helaili/jekyll-action@2.5.0
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           jekyll_src: "src"
           target_branch: "gh-pages"
