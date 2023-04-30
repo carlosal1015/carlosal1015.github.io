@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- KaTeX 0.16.7 -->
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.css"
+    integrity="sha384-YiVwk+MBV52+yIvvplLwDxm3iGDI7dYb731lqsN9ASGBpIpJ/dte35lBIuR5oGFU"
+    crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.js"
+    integrity="sha384-8JJEhHkwY0VI06p7huKe7LqvYgDhSS69qJxWSQGwlB8FmDnAgPKgZGk5Ui0VyuNH"
+    crossorigin="anonymous"></script>
+    
+
+    
+
+
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Write differential equations very easily with diffcoeff! | Oromion's blog</title>
+
+    <meta name="description" content="Often, the mathematician needs to represent mathematical expressions such as differential equations. So that this is not a nightmare, the mathematician Andre...">
+    
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://carlosal1015.github.io/tex/2019/01/06/diffeq/">
+    <link rel="alternate" type="application/atom+xml" title="Oromion's blog" href="/feed.xml" />
+
+    
+
+    <meta property="og:title" content="Write differential equations very easily with diffcoeff! | Oromion's blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://t4.ftcdn.net/jpg/02/28/03/25/240_F_228032509_5no9iLuwmjksnDktCBau2EDnkfHFItRE.jpg" />
+    <meta property="og:url" content="https://carlosal1015.github.io/tex/2019/01/06/diffeq/" />
+    <meta property="og:site_name" content="Oromion's blog" />
+    <meta property="og:description" content="Often, the mathematician needs to represent mathematical expressions such as differential equations. So that this is not a nightmare, the mathematician Andre..." />
+
+    <script src="https://use.fontawesome.com/1f5f360d80.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
+
+    <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <script src="/assets/js/katex_init.js"></script>
+    <header class="site-header">
+    <div class="inner clearfix">
+        
+        <a href="/">
+            <img class="avatar" src="/assets/img/ogp.png" alt="">
+        </a>
+        
+        <h1 class="clearfix">
+            <a class="title " href="/">Oromion's blog</a>
+            <br><span class="description">Blog about mathematics, TeX and programming.</span>
+        </h1>
+    </div>
+</header>
+
+<div class="site-container">
+    <div class="site-content">
+        <div class="article-wrapper">
+    <article>
+        
+
+<header>
+    <div class="panel">
+        <h1>
+            
+            Write differential equations very easily with diffcoeff!
+            
+        </h1>
+
+        <ul class="tags">
+            
+            
+            <li><i class="fa fa-tags"></i></li>
+            
+            
+            <li>
+                <a class="tag" href="/search/?t=best-practices">#best-practices</a>
+            </li>
+            
+            <li>
+                <a class="tag" href="/search/?t=useful-packages">#useful-packages</a>
+            </li>
+            
+        </ul>
+
+        <div class="clearfix">
+            <ul class="meta">
+                
+                <li>
+                    <i class="fa fa-calendar"></i>
+                    2019-01-06
+                </li>
+                
+
+                
+            </ul>
+        </div>
+    </div>
+
+    
+    <p style="text-align: center">
+        <img class="eye-catch" src="https://t4.ftcdn.net/jpg/02/28/03/25/240_F_228032509_5no9iLuwmjksnDktCBau2EDnkfHFItRE.jpg">
+    </p>
+    
+</header>
+        <section class="post-content">
+            <p>Often, the mathematician needs to represent mathematical expressions such as differential equations. So that this is not a nightmare, the mathematician <a href="https://link.springer.com/article/10.1007/BF02189611">Andrew Parsloe</a> created a package that offers super useful commands. This post will deal with such commands, show the results without the package and with the package to see the differences. Let’s go!</p>
+
+<!--more-->
+
+<p>In the first place, we need to load the package <code class="language-plaintext highlighter-rouge">diffcoeff</code>. I recommend using the last version, i.e., version 3.0. It’s available on TeX Live distribution for all platforms like GNU/Linux, Mac OS X, Windows 10, and so on.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">diffcoeff</code> package works thanks to <script type="math/tex">\LaTeX 3_{\varepsilon}</script> kernel.</p>
+
+<h3 id="update-31-on-09032019-zap">Update 3.1 on 09/03/2019 <img class="emoji" title=":zap:" alt=":zap:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a1.png" height="20" width="20">
+</h3>
+
+<p>From now on, this package is compatible with differentials of a vector-valued function. Motivate for this <a href="https://tex.stackexchange.com/a/478647"><strong>question</strong></a> on popular forum of <script type="math/tex">\LaTeX</script>. Check out the section six of <code class="language-plaintext highlighter-rouge">diffcoeff</code><a href="http://ctan.dcc.uchile.cl/macros/latex/contrib/diffcoeff/diffcoeff.pdf"><strong>documentation on CTAN</strong></a> for this update. <img class="emoji" title=":smiley:" alt=":smiley:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png" height="20" width="20"></p>
+
+<h2 id="minimal-working-example">Minimal Working example</h2>
+
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="k">\documentclass</span><span class="p">{</span>article<span class="p">}</span>
+<span class="k">\usepackage</span><span class="na">[ISO]</span><span class="p">{</span>diffcoeff<span class="p">}</span>	<span class="c">% Important load diffcoeff package.</span>
+<span class="c">%\usepackage{amsmath}</span>
+
+<span class="nt">\begin{document}</span>
+<span class="p">$</span><span class="nv">\diff</span><span class="p">{</span><span class="nb">y</span><span class="p">}{</span><span class="nb">x</span><span class="p">}$</span>			<span class="c">% Appears the left hand side of differential equation.</span>
+<span class="nt">\end{document}</span></code></pre></figure>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">
+<script type="math/tex">\LaTeX</script> expression <code class="language-plaintext highlighter-rouge">diffcoeff</code>
+</th>
+      <th style="text-align: center">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">
+<script type="math/tex">\verb!$\diff{y}{x}$!</script> or <script type="math/tex">\verb!$\diff[1]yx$!</script>
+</td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\mathrm{d}y}{\mathrm{d}x}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff{\ln x}/{x}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\mathrm{d} \ln x/\mathrm{d}x</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">
+<script type="math/tex">\verb!$\diff[2]yx$!</script> and <script type="math/tex">\verb!$\diff[2]y/x!</script>
+</td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\mathrm{d}^2y}{\mathrm{d}x^2}\quad\mathrm{d}^2y/\mathrm{d}x^2</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">
+<script type="math/tex">\verb!$\diff[n+1]yx$!</script> and <script type="math/tex">\verb!$\diff[n+1]y/x$!</script>
+</td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\mathrm{d}^{n+1}y}{\mathrm{d}x^{n+1}}\quad\mathrm{d}^{n+1}y/\mathrm{d}x^{n+1}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff{\ln\sin x}{\sin x}\diff{\sin x}x$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\mathrm{d}\ln\sin x}{\mathrm{d}\sin x}\frac{\mathrm{d}\sin x}{\mathrm{d}x}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff[2]{\ln\sin x}{\sin x}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\mathrm{d}^2\ln\sin x}{\mathrm{d}{\left(\sin x\right)}^2}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff{f(x)}{1/x},\quad\diff{f(x)}{(1/x)}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\mathrm{d}f(x)}{\mathrm{d}1/x},\quad\frac{\mathrm{d}f(x)}{\mathrm{d}(1/x)}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff{\nilmu f(x)}{\onemu 1/x},\quad\diff{\nilmu f(x)}{(1/x)}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\mathrm{d}\ f(x)}{\mathrm{d}\ 1/x},\quad\frac{\mathrm{d}\ f(x)}{\mathrm{d}\ (1/x)}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff*{(ax^2+bx+c)}x$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\mathrm{d}}{\mathrm{d}x}\left(ax^2+bx+c\right)</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff[2]yx=\diff*{\diff yx}x$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\mathrm{d}^2y}{\mathrm{d}x^2}=\frac{\mathrm{d}}{\mathrm{d}x}\frac{\mathrm{d}y}{\mathrm{d}x}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff*{(ax^2+bx+c)}/x$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\left(d/dx\right)\left(ax^2+bx+c\right)</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Without <code class="language-plaintext highlighter-rouge">ISO</code> option: <script type="math/tex">\verb!$\diff[2]yx[0]$!</script>
+</td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\left.\frac{d^2y}{dx^2}\right\vert_{0}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff[2]yx[0]$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}{\left(\frac{\mathrm{d}^2y}{\mathrm{d}x^2}\right)}_{0}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff{\ln \sin x}/{\sin x}[x=\pi/6]$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}{\left(\mathrm{d}\ln\sin x/\mathrm{d}\sin x\right)}_{x=\pi/6}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Without <code class="language-plaintext highlighter-rouge">ISO</code> option: <script type="math/tex">\verb!$\diff{\sin x}x[0]^{\pi/2}$!</script>
+</td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\left.\frac{d\sin x}{dx}\right\vert_{0}^{\pi/2}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diff{\sin x}x[0]^{\pi/2}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}{\left(\frac{\mathrm{d}\sin x}{\mathrm{d}x}\right)}_{0}^{\pi/2}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">With <code class="language-plaintext highlighter-rouge">amsmath</code> package: <script type="math/tex">\verb!$\tfrac 12 m \diff x/t[]^2$!</script>
+</td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\tfrac{1}{2}m{\left(\mathrm{d}x/\mathrm{d}t\right)}^2</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">
+<script type="math/tex">\verb!$\diffp{F}{x}$!</script> or <script type="math/tex">\verb!$\diffp Fx$!</script>
+</td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial F}{\partial x}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp [3]F/x,\quad \diffp[n]F/x$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\partial^3F/\partial x^3,\quad\partial^nF/\partial x^n</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[n+1]Fx$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{n+1}F}{\partial x^{n+1}}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp ST[V]$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}{\left(\frac{\partial S}{\partial T}\right)}_V</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp S/T[V]$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}{\left(\partial S/\partial T\right)}_{V}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp {F(x,y)}x[(0,0)]$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}{\left(\frac{\partial F\left(x,y\right)}{\partial x}\right)}_{\left(0,0\right)}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp yx[]$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\left(\frac{\partial y}{\partial x}\right)</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp L{q_k}-\diff*{\diffp L{\dot{q}_k}[]}t=0$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial L}{\partial q_k}-\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\partial L}{\partial \dot{q}_k}\right)=0</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp*[2]{\Phi(x,y,z)}x$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^2}{\partial x^2}\Phi\left(x,y,z\right)</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp*[n]{f(x)}/x$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\left(\partial^n/\partial x^n\right)f(x)</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp*{\frac PT}U[V]=\diffp*{\frac 1T}V[U]$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}{\left(\frac{\partial}{\partial U}\frac{P}{T}\right)}_V={\left(\frac{\partial}{\partial V}\frac{1}{T}\right)}_{U}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp F{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^3F}{\partial x\partial y\partial z}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp F/{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\partial^3F/\partial x\partial y\partial z</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[2,3]F{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^6F}{\partial x^2\partial y^3\partial z}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[1,m+1,m-1]{F(x,y,z)}{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{2m+1}F\left(x,y,z\right)}{\partial x\partial y^{m+1}\partial z^{m-1}}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[2km,m-1,m+1]{F(x,y,z)}{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{2km+2m}F\left(x,y,z\right)}{\partial x^{2km}\partial y^{m-1}\partial z^{m+1}}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[2km,m-1,m+1][2m(k+1)]{F(x,y,z)}{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{2m(k+1)}F\left(x,y,z\right)}{\partial x^{2km}\partial y^{m-1}\partial z^{m+1}}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[m/2+n/2,m/2,n/2]F{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{2n/2+2m/2}F}{\partial x^{m/2+n/2}\partial y^{m/2}\partial z^{n/2}}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[m/2+n/2,m/2,n/2][m+n]F{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{m+n}F}{\partial x^{m/2+n/2}\partial y^{m/2}\partial z^{n/2}}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp{A_i}{x^j,x^k}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^2A_i}{\partial x^j\partial x^k}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp{A_i}{x^j\negmu,x^k}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^2A_i}{\partial x^j\partial x^k}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp [2m-(k+1),2(k+1)-m]{F(x,y,z)}{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{k+m+2}F\left(x,y,z\right)}{\partial x^{2m-(k+1)}\partial y^{2(k+1)-m}\partial z}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[f(k+1)+1,f(k-1)-1]{F(x,y)}{x,y}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{f(k-1)+f(k+1)}F\left(x,y\right)}{\partial x^{f(k+1)+1}\partial y^{f(k-1)-1}}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[2(3+f(k))+1,1-3(f(k)-2)]{F(x,y)}{x,y}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{14-f(k)}F\left(x,y\right)}{\partial x^{2\left(3+f(k)\right)+1}\partial y^{1-3\left(f(k)-2\right)}}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[m^2+2(k-1),m^2-(k+1)]F{x,y,z,w}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^{2m^2+k-1} F}{\partial x^{m^2+2(k-1)}\partial y^{m^2-(k+1)}\partial z\partial w}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp[2]q{\frac 1\Theta}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^2q}{\partial{\left(\frac{1}{\Theta}\right)}^2}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\diffp q{(\frac 1\Theta),V}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial^2q}{\partial\left(\frac{1}{\Theta}\right)\partial V}</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\verb!$\jacob{u,v,w}{x,y,z}$!</script></td>
+      <td style="text-align: center"><script type="math/tex">\color{#0000FF}\frac{\partial\left(u,v,w\right)}{\partial\left(x,y,z\right)}</script></td>
+    </tr>
+  </tbody>
+</table>
+
+        </section>
+    </article>
+</div>
+    </div>
+
+    <aside class="site-aside">
+        <div class="inner">
+            <div class="block">
+                <form action="/search">
+                    <input type="search" id="search" name="q" placeholder="Search">
+                </form>
+            </div>
+            <ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a class="page-link" href="/about/">About</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/welcome/">Welcome</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/tags/">Tags</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/archives/">Archives</a></li>
+                
+                
+            </ul>
+            <ul class="icons">
+                
+
+
+<li>
+    <a href="/feed.xml">
+        <i class="fa fa-fw fa-rss"></i>
+    </a>
+</li>
+
+
+
+<li>
+    <a href="mailto:caznaranl@uni.pe">
+        <i class="fa fa-fw fa-envelope"></i>
+    </a>
+</li>
+
+
+
+<li>
+    <a href="https://github.com/carlosal1015">
+        <i class="fa fa-fw fa-github"></i>
+    </a>
+</li>
+
+
+
+
+<li>
+    <a href="https://twitter.com/carlosal1015">
+        <i class="fa fa-fw fa-twitter"></i>
+    </a>
+</li>
+
+
+
+
+
+<li>
+    <a href="https://www.reddit.com/user/carlosal1015">
+        <i class="fa fa-fw fa-reddit"></i>
+    </a>
+</li>
+
+
+
+<li>
+    <a href="https://stackexchange.com/users/9558603/oromion">
+        <i class="fa fa-fw fa-stack-exchange"></i>
+    </a>
+</li>
+
+
+
+<li>
+    <a href="https://blogdeoromion.wordpress.com/">
+        <i class="fa fa-fw fa-wordpress"></i>
+    </a>
+</li>
+
+
+
+<li>
+    <a href="https://www.youtube.com/channel/UC0dDIu9Ppa8BMXrNksA5oYA">
+        <i class="fa fa-fw fa-youtube"></i>
+    </a>
+</li>
+
+                <video controls="" autoplay="" name="media">
+    <!-- <source src="https://streamer.radio.co/s06b196587/listen" type="audio/mpeg"> -->
+    <source src="https://stream9.mexiserver.com:7122/stream?icy=http" type="audio/mpeg">
+</source></video>
+            </ul>
+            <hr class="with-no-margin margin-bottom">
+
+            <div class="block sticky">
+                <h2>Recent posts</h2>
+                <ul>
+                    
+                    
+                    
+                    
+                    <li><a href="/linux/2022/09/13/irc/">IRC</a></li>
+                    
+                    <li><a href="/math/2020/12/11/blas/">BLAS</a></li>
+                    
+                    <li><a href="/tex/2019/01/06/diffeq/">Write differential equations very easily with diffcoeff!</a></li>
+                    
+                    <li><a href="/math/2018/12/25/xii_fast_workshop/">Cuerpos gaussianos y cadenas de Markov</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<footer class="site-footer">
+    <div class="inner">
+        <span>Powered by </span><a href="https://khan.github.io/">Khan Academy</a><span> and Oromion.</span>
+    </div>
+</footer>
+
+<script src="/assets/lib/garand-sticky/jquery.sticky.js"></script>
+<script src="/assets/js/script.js"></script>
+
+
+<script src="/assets/js/header-link.js"></script>
+
+
+
+
+<script src="/assets/js/katex_init.js"></script>
+
+</body>
+</html>

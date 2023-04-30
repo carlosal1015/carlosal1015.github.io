@@ -1,0 +1,43 @@
+[
+
+{
+"id": "-linux-2022-09-13-irc",
+"title": "IRC",
+"author": null,
+"tags": ["irc"],
+"url": "/linux/2022/09/13/irc/",
+"date": "2022-09-13",
+"content": "Getting started with IRCFirst, install some IRC client like weechat as follows$ sudo pacman -S weechatresolving dependencies...looking for conflicting packages...Packages (1) weechat-3.6-1Total Download Size:    2.74 MiBTotal Installed Size:  26.77 MiB:: Proceed with installation? [Y/n] :: Retrieving packages... weechat-3.6-1-x86_64 downloading...checking keyring...checking package integrity...loading package files...checking for file conflicts...:: Processing package changes...installing weechat...Optional dependencies for weechat    aspell: spellchecker support    guile: support for guile scripts [installed]    lua: support for lua scripts    perl: support for perl scripts [installed]    python: support for python scripts    ruby: support for ruby scripts    tcl: support for tcl scripts:: Running post-transaction hooks...(1/1) Arming ConditionNeedsUpdate...Type weechat and we will start learning the commands / and shortcuts.Useful links  Registration on libera.chat  Weechat tutorial  Weechat key bindings  Arch Linux IRC channels  arch4edu IRC channel"
+}, 
+
+{
+"id": "-math-2020-12-11-blas",
+"title": "BLAS",
+"author": null,
+"tags": ["blas"],
+"url": "/math/2020/12/11/blas/",
+"date": "2020-12-11",
+"content": "The most knowns libraries by linear algebra calculations are BLAS (Basic Linear Algebra Subprograms) and LAPACK (Linear Algebra PACKage).Floating-Pointing Numbers"
+}, 
+
+{
+"id": "-tex-2019-01-06-diffeq",
+"title": "Write differential equations very easily with diffcoeff!",
+"author": null,
+"tags": ["best-practices", "useful-packages"],
+"url": "/tex/2019/01/06/diffeq/",
+"date": "2019-01-06",
+"content": "Often, the mathematician needs to represent mathematical expressions such as differential equations. So that this is not a nightmare, the mathematician Andrew Parsloe created a package that offers super useful commands. This post will deal with such commands, show the results without the package and with the package to see the differences. Let’s go!In the first place, we need to load the package diffcoeff. I recommend using the last version, i.e., version 3.0. It’s available on TeX Live distribution for all platforms like GNU/Linux, Mac OS X, Windows 10, and so on.The diffcoeff package works thanks to  kernel.Update 3.1 on 09/03/2019 :zap:From now on, this package is compatible with differentials of a vector-valued function. Motivate for this question on popular forum of . Check out the section six of diffcoeffdocumentation on CTAN for this update. :smiley:Minimal Working example\\documentclass{article}\\usepackage[ISO]{diffcoeff}\t% Important load diffcoeff package.%\\usepackage{amsmath}\\begin{document}$\\diff{y}{x}$\t\t\t% Appears the left hand side of differential equation.\\end{document}             expression diffcoeff      Output                   or                                          and                      and                                                                                                                                                                 Without ISO option:                                                             Without ISO option:                                         With amsmath package:                      or                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "
+}, 
+
+{
+"id": "-math-2018-12-25-xii_fast_workshop",
+"title": "Cuerpos gaussianos y cadenas de Markov",
+"author": null,
+"tags": ["algebra", "UNI", "elliptic-curves", "markov-chain"],
+"url": "/math/2018/12/25/xii_fast_workshop/",
+"date": "2018-12-25",
+"content": "XII International Fast WorkShop on Applied and Computational MathematicsComo es costumbre, durante los primeros días de cada año, laUniversidad Nacional de Trujillo (UNT) reúne amatemáticos, amigos, estudiantes y profesores de distintas latitudes.En esta edición la Universidad Nacional de Ingeniería estará presentecon dos exposiciones Mordell’s Theorem on the Fiele Gaussian yStability of Singular Linear Systems with associated with a Markov chain.Otras exposiciones interesantes se comentará a lo largo del post.El teorema de Mordell sobre el cuerpo gaussianoEl teorema de Mordell-Weil afirma que si es una curva elíptica racional nosingular, esto es que  y  no tengan raícescomunes, entonces el grupo de los puntos racionales es un grupo abeliano finitamentegenerado.Es decir, este grupo va a ser isomorfo a el producto  veces de multiplicados a su vez por una cierta cantidad degrupos finitos, es decir,En 1922, el matemático británico (1888-1972), representante estudiosode la teoría de números, demostró que el conjunto de puntosracionales de una curva elíptica  es ungrupo abeliano generado por un número finito de puntos racionales,años más tarde, en 1928, el matemático francés André Weil (1906-1998)obtuvo un resultado que extendió la validez del teorema anteriorsobre el dominio de cualquier cuerpo numérico.Curvas elípticasSon expresiones de la formadonde  y no presenta puntos singulares, en la literatura también esllamada ecuación de Weierstrass.Si omitimos cuerpos los cuerpos de característica  y , seobtendría una expresión comocon .Si definimos la operación de adición de una curva elíptica, como lareflexión sobre el eje  del punto de intersección que se obtieneal trazar una recta sobre los dos puntos que deseamos adicionar, severificará que el conjuntounido con el punto en cuestión, posee la estructura de grupo abeliano.Se desea estudiar ecuaciones del tipocon  que fueron estudiadospor los matemáticos griegos, y en particular, por Diofanto deAlejandría.Muy bien, ya hemos presentando a las curvas elípticas.Como consecuencia del resultado de Weil, se tiene que cualquiersolución racional de  divide en dos partes, unaparte libre y otras con torsión.Pero, se estudiará solo ,esto es, todos los puntos racionales de orden finito.Gracias alTeorema de Nagell-LutzSeauna curva elíptica no singular, con coeficientes y seaentonces un punto  de orden finito cumple que.  Pregunta natural: ¿Será posible validar estos resultados en un cuerpo gaussiano?Claro, el campo de los números conmensurables comparte muchaspropiedades que el de los cuerpos gaussianos.El anillo de enteros gaussianos es un dominio euclidiano, defactorización única.MotivaciónPara cuáles  se cumple que  es uncuadrado perfecto, esta misma formulación matemática expresada encurvas elípticas equivale a encontrar las soluciones enteraspositivas delo que es igual aNew Fractals as Images of Fractals Classic under a Complex Polinomial TransformationLa justificación rigurosa de la existencia de conjuntos fractalesclásicos tales como el Conjunto de Cantar, Triángulo de Sierpinski,Alfombra de Serpienski, Curva de Koch, etc, se fundamenta en base alOperador de Hutchinsone."
+}
+
+]

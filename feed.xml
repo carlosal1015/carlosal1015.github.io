@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://carlosal1015.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://carlosal1015.github.io/" rel="alternate" type="text/html" /><updated>2023-04-30T16:21:40+00:00</updated><id>https://carlosal1015.github.io/feed.xml</id><title type="html">Oromion’s blog</title><subtitle>Blog about mathematics, TeX and programming.</subtitle><author><name>Oromion</name></author><entry><title type="html">IRC</title><link href="https://carlosal1015.github.io/linux/2022/09/13/irc/" rel="alternate" type="text/html" title="IRC" /><published>2022-09-13T00:00:00+00:00</published><updated>2022-09-13T00:00:00+00:00</updated><id>https://carlosal1015.github.io/linux/2022/09/13/irc</id><content type="html" xml:base="https://carlosal1015.github.io/linux/2022/09/13/irc/">&lt;h2 id=&quot;getting-started-with-irc&quot;&gt;Getting started with IRC&lt;/h2&gt;
+
+&lt;p&gt;First, install some IRC client like &lt;a href=&quot;https://archlinux.org/packages/community/x86_64/weechat&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;weechat&lt;/code&gt;&lt;/a&gt; as follows&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;pacman &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; weechat
+&lt;span class=&quot;go&quot;&gt;resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) weechat-3.6-1
+
+Total Download Size:    2.74 MiB
+Total Installed Size:  26.77 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ weechat-3.6-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+:: Processing package changes...
+installing weechat...
+Optional dependencies for weechat
+    aspell: spellchecker support
+    guile: support for guile scripts [installed]
+    lua: support for lua scripts
+    perl: support for perl scripts [installed]
+    python: support for python scripts
+    ruby: support for ruby scripts
+    tcl: support for tcl scripts
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;weechat&lt;/code&gt; and we will start learning the commands &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; and shortcuts.&lt;/p&gt;
+
+&lt;h4 id=&quot;useful-links&quot;&gt;Useful links&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://libera.chat/guides/registration&quot;&gt;Registration on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libera.chat&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://weechat.org/files/doc/stable/weechat_quickstart.en.html&quot;&gt;Weechat tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://weechat.org/files/doc/stable/weechat_user.en.html#key_bindings&quot;&gt;Weechat key bindings&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiki.archlinux.org/title/Arch_IRC_channels#Other_channels&quot;&gt;Arch Linux IRC channels&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/arch4edu/arch4edu/blob/master/README.md?plain=1#L21&quot;&gt;arch4edu IRC channel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Oromion</name></author><category term="irc" /><summary type="html">Getting started with IRC First, install some IRC client like weechat as follows $ sudo pacman -S weechat resolving dependencies... looking for conflicting packages... Packages (1) weechat-3.6-1 Total Download Size: 2.74 MiB Total Installed Size: 26.77 MiB :: Proceed with installation? [Y/n] :: Retrieving packages... weechat-3.6-1-x86_64 downloading... checking keyring... checking package integrity... loading package files... checking for file conflicts... :: Processing package changes... installing weechat... Optional dependencies for weechat aspell: spellchecker support guile: support for guile scripts [installed] lua: support for lua scripts perl: support for perl scripts [installed] python: support for python scripts ruby: support for ruby scripts tcl: support for tcl scripts :: Running post-transaction hooks... (1/1) Arming ConditionNeedsUpdate... Type weechat and we will start learning the commands / and shortcuts. Useful links Registration on libera.chat Weechat tutorial Weechat key bindings Arch Linux IRC channels arch4edu IRC channel</summary></entry><entry><title type="html">BLAS</title><link href="https://carlosal1015.github.io/math/2020/12/11/blas/" rel="alternate" type="text/html" title="BLAS" /><published>2020-12-11T00:00:00+00:00</published><updated>2020-12-11T00:00:00+00:00</updated><id>https://carlosal1015.github.io/math/2020/12/11/blas</id><content type="html" xml:base="https://carlosal1015.github.io/math/2020/12/11/blas/">&lt;p&gt;The most knowns libraries by linear algebra calculations are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BLAS&lt;/code&gt; (Basic Linear Algebra Subprograms) and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LAPACK&lt;/code&gt; (Linear Algebra PACKage).&lt;/p&gt;
+
+&lt;h2 id=&quot;floating-pointing-numbers&quot;&gt;Floating-Pointing Numbers&lt;/h2&gt;</content><author><name>Oromion</name></author><category term="blas" /><summary type="html">The most knowns libraries by linear algebra calculations are BLAS (Basic Linear Algebra Subprograms) and LAPACK (Linear Algebra PACKage). Floating-Pointing Numbers</summary></entry><entry><title type="html">Write differential equations very easily with diffcoeff!</title><link href="https://carlosal1015.github.io/tex/2019/01/06/diffeq/" rel="alternate" type="text/html" title="Write differential equations very easily with diffcoeff!" /><published>2019-01-06T00:00:00+00:00</published><updated>2019-01-06T00:00:00+00:00</updated><id>https://carlosal1015.github.io/tex/2019/01/06/diffeq</id><content type="html" xml:base="https://carlosal1015.github.io/tex/2019/01/06/diffeq/">&lt;p&gt;Often, the mathematician needs to represent mathematical expressions such as differential equations. So that this is not a nightmare, the mathematician &lt;a href=&quot;https://link.springer.com/article/10.1007/BF02189611&quot;&gt;Andrew Parsloe&lt;/a&gt; created a package that offers super useful commands. This post will deal with such commands, show the results without the package and with the package to see the differences. Let’s go!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;In the first place, we need to load the package &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diffcoeff&lt;/code&gt;. I recommend using the last version, i.e., version 3.0. It’s available on TeX Live distribution for all platforms like GNU/Linux, Mac OS X, Windows 10, and so on.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diffcoeff&lt;/code&gt; package works thanks to &lt;script type=&quot;math/tex&quot;&gt;\LaTeX 3_{\varepsilon}&lt;/script&gt; kernel.&lt;/p&gt;
+
+&lt;h3 id=&quot;update-31-on-09032019-zap&quot;&gt;Update 3.1 on 09/03/2019 :zap:&lt;/h3&gt;
+
+&lt;p&gt;From now on, this package is compatible with differentials of a vector-valued function. Motivate for this &lt;a href=&quot;https://tex.stackexchange.com/a/478647&quot;&gt;&lt;strong&gt;question&lt;/strong&gt;&lt;/a&gt; on popular forum of &lt;script type=&quot;math/tex&quot;&gt;\LaTeX&lt;/script&gt;. Check out the section six of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diffcoeff&lt;/code&gt;&lt;a href=&quot;http://ctan.dcc.uchile.cl/macros/latex/contrib/diffcoeff/diffcoeff.pdf&quot;&gt;&lt;strong&gt;documentation on CTAN&lt;/strong&gt;&lt;/a&gt; for this update. :smiley:&lt;/p&gt;
+
+&lt;h2 id=&quot;minimal-working-example&quot;&gt;Minimal Working example&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-tex&quot; data-lang=&quot;tex&quot;&gt;&lt;span class=&quot;k&quot;&gt;\documentclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;article&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[ISO]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;diffcoeff&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;% Important load diffcoeff package.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;%\usepackage{amsmath}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;\begin{document}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\diff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}$&lt;/span&gt;			&lt;span class=&quot;c&quot;&gt;% Appears the left hand side of differential equation.&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;\end{document}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\LaTeX&lt;/script&gt; expression &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diffcoeff&lt;/code&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Output&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff{y}{x}$!&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff[1]yx$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\mathrm{d}y}{\mathrm{d}x}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff{\ln x}/{x}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\mathrm{d} \ln x/\mathrm{d}x&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff[2]yx$!&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff[2]y/x!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\mathrm{d}^2y}{\mathrm{d}x^2}\quad\mathrm{d}^2y/\mathrm{d}x^2&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff[n+1]yx$!&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff[n+1]y/x$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\mathrm{d}^{n+1}y}{\mathrm{d}x^{n+1}}\quad\mathrm{d}^{n+1}y/\mathrm{d}x^{n+1}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff{\ln\sin x}{\sin x}\diff{\sin x}x$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\mathrm{d}\ln\sin x}{\mathrm{d}\sin x}\frac{\mathrm{d}\sin x}{\mathrm{d}x}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff[2]{\ln\sin x}{\sin x}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\mathrm{d}^2\ln\sin x}{\mathrm{d}{\left(\sin x\right)}^2}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff{f(x)}{1/x},\quad\diff{f(x)}{(1/x)}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\mathrm{d}f(x)}{\mathrm{d}1/x},\quad\frac{\mathrm{d}f(x)}{\mathrm{d}(1/x)}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff{\nilmu f(x)}{\onemu 1/x},\quad\diff{\nilmu f(x)}{(1/x)}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\mathrm{d}\ f(x)}{\mathrm{d}\ 1/x},\quad\frac{\mathrm{d}\ f(x)}{\mathrm{d}\ (1/x)}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff*{(ax^2+bx+c)}x$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\mathrm{d}}{\mathrm{d}x}\left(ax^2+bx+c\right)&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff[2]yx=\diff*{\diff yx}x$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\mathrm{d}^2y}{\mathrm{d}x^2}=\frac{\mathrm{d}}{\mathrm{d}x}\frac{\mathrm{d}y}{\mathrm{d}x}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff*{(ax^2+bx+c)}/x$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\left(d/dx\right)\left(ax^2+bx+c\right)&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Without &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISO&lt;/code&gt; option: &lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff[2]yx[0]$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\left.\frac{d^2y}{dx^2}\right\vert_{0}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff[2]yx[0]$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}{\left(\frac{\mathrm{d}^2y}{\mathrm{d}x^2}\right)}_{0}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff{\ln \sin x}/{\sin x}[x=\pi/6]$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}{\left(\mathrm{d}\ln\sin x/\mathrm{d}\sin x\right)}_{x=\pi/6}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Without &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISO&lt;/code&gt; option: &lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff{\sin x}x[0]^{\pi/2}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\left.\frac{d\sin x}{dx}\right\vert_{0}^{\pi/2}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diff{\sin x}x[0]^{\pi/2}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}{\left(\frac{\mathrm{d}\sin x}{\mathrm{d}x}\right)}_{0}^{\pi/2}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;With &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amsmath&lt;/code&gt; package: &lt;script type=&quot;math/tex&quot;&gt;\verb!$\tfrac 12 m \diff x/t[]^2$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\tfrac{1}{2}m{\left(\mathrm{d}x/\mathrm{d}t\right)}^2&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp{F}{x}$!&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp Fx$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial F}{\partial x}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp [3]F/x,\quad \diffp[n]F/x$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\partial^3F/\partial x^3,\quad\partial^nF/\partial x^n&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[n+1]Fx$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{n+1}F}{\partial x^{n+1}}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp ST[V]$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}{\left(\frac{\partial S}{\partial T}\right)}_V&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp S/T[V]$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}{\left(\partial S/\partial T\right)}_{V}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp {F(x,y)}x[(0,0)]$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}{\left(\frac{\partial F\left(x,y\right)}{\partial x}\right)}_{\left(0,0\right)}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp yx[]$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\left(\frac{\partial y}{\partial x}\right)&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp L{q_k}-\diff*{\diffp L{\dot{q}_k}[]}t=0$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial L}{\partial q_k}-\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\partial L}{\partial \dot{q}_k}\right)=0&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp*[2]{\Phi(x,y,z)}x$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^2}{\partial x^2}\Phi\left(x,y,z\right)&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp*[n]{f(x)}/x$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\left(\partial^n/\partial x^n\right)f(x)&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp*{\frac PT}U[V]=\diffp*{\frac 1T}V[U]$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}{\left(\frac{\partial}{\partial U}\frac{P}{T}\right)}_V={\left(\frac{\partial}{\partial V}\frac{1}{T}\right)}_{U}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp F{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^3F}{\partial x\partial y\partial z}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp F/{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\partial^3F/\partial x\partial y\partial z&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[2,3]F{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^6F}{\partial x^2\partial y^3\partial z}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[1,m+1,m-1]{F(x,y,z)}{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{2m+1}F\left(x,y,z\right)}{\partial x\partial y^{m+1}\partial z^{m-1}}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[2km,m-1,m+1]{F(x,y,z)}{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{2km+2m}F\left(x,y,z\right)}{\partial x^{2km}\partial y^{m-1}\partial z^{m+1}}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[2km,m-1,m+1][2m(k+1)]{F(x,y,z)}{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{2m(k+1)}F\left(x,y,z\right)}{\partial x^{2km}\partial y^{m-1}\partial z^{m+1}}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[m/2+n/2,m/2,n/2]F{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{2n/2+2m/2}F}{\partial x^{m/2+n/2}\partial y^{m/2}\partial z^{n/2}}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[m/2+n/2,m/2,n/2][m+n]F{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{m+n}F}{\partial x^{m/2+n/2}\partial y^{m/2}\partial z^{n/2}}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp{A_i}{x^j,x^k}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^2A_i}{\partial x^j\partial x^k}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp{A_i}{x^j\negmu,x^k}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^2A_i}{\partial x^j\partial x^k}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp [2m-(k+1),2(k+1)-m]{F(x,y,z)}{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{k+m+2}F\left(x,y,z\right)}{\partial x^{2m-(k+1)}\partial y^{2(k+1)-m}\partial z}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[f(k+1)+1,f(k-1)-1]{F(x,y)}{x,y}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{f(k-1)+f(k+1)}F\left(x,y\right)}{\partial x^{f(k+1)+1}\partial y^{f(k-1)-1}}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[2(3+f(k))+1,1-3(f(k)-2)]{F(x,y)}{x,y}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{14-f(k)}F\left(x,y\right)}{\partial x^{2\left(3+f(k)\right)+1}\partial y^{1-3\left(f(k)-2\right)}}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[m^2+2(k-1),m^2-(k+1)]F{x,y,z,w}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^{2m^2+k-1} F}{\partial x^{m^2+2(k-1)}\partial y^{m^2-(k+1)}\partial z\partial w}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp[2]q{\frac 1\Theta}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^2q}{\partial{\left(\frac{1}{\Theta}\right)}^2}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\diffp q{(\frac 1\Theta),V}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial^2q}{\partial\left(\frac{1}{\Theta}\right)\partial V}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\verb!$\jacob{u,v,w}{x,y,z}$!&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\color{#0000FF}\frac{\partial\left(u,v,w\right)}{\partial\left(x,y,z\right)}&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Oromion</name></author><category term="best-practices" /><category term="useful-packages" /><summary type="html">Often, the mathematician needs to represent mathematical expressions such as differential equations. So that this is not a nightmare, the mathematician Andrew Parsloe created a package that offers super useful commands. This post will deal with such commands, show the results without the package and with the package to see the differences. Let’s go!</summary></entry><entry><title type="html">Cuerpos gaussianos y cadenas de Markov</title><link href="https://carlosal1015.github.io/math/2018/12/25/xii_fast_workshop/" rel="alternate" type="text/html" title="Cuerpos gaussianos y cadenas de Markov" /><published>2018-12-25T00:00:00+00:00</published><updated>2018-12-25T00:00:00+00:00</updated><id>https://carlosal1015.github.io/math/2018/12/25/xii_fast_workshop</id><content type="html" xml:base="https://carlosal1015.github.io/math/2018/12/25/xii_fast_workshop/">&lt;h1 id=&quot;xii-international-fast-workshop-on-applied-and-computational-mathematics&quot;&gt;XII International Fast WorkShop on Applied and Computational Mathematics&lt;/h1&gt;
+
+&lt;p&gt;Como es costumbre, durante los primeros días de cada año, la
+&lt;a href=&quot;www.unt.edu.pe&quot;&gt;Universidad Nacional de Trujillo (UNT)&lt;/a&gt; reúne a
+matemáticos, amigos, estudiantes y profesores de distintas latitudes.
+En esta edición la Universidad Nacional de Ingeniería estará presente
+con dos exposiciones &lt;em&gt;Mordell’s Theorem on the Fiele Gaussian&lt;/em&gt; y
+&lt;em&gt;Stability of Singular Linear Systems with associated with a Markov chain&lt;/em&gt;.
+Otras exposiciones interesantes se comentará a lo largo del post.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1 id=&quot;el-teorema-de-mordell-sobre-el-cuerpo-gaussiano&quot;&gt;El teorema de Mordell sobre el cuerpo gaussiano&lt;/h1&gt;
+
+&lt;p&gt;El teorema de &lt;strong&gt;Mordell-Weil&lt;/strong&gt; afirma que si
+&lt;script type=&quot;math/tex&quot;&gt;E\coloneqq y^2=f\left(x\right)&lt;/script&gt; es una curva elíptica racional no
+singular, esto es que &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt; y &lt;script type=&quot;math/tex&quot;&gt;\mathrm{d}f&lt;/script&gt; no tengan raíces
+comunes, entonces el grupo de los puntos racionales
+&lt;script type=&quot;math/tex&quot;&gt;E\left(\mathbb{Q}\right)&lt;/script&gt; es un grupo abeliano finitamente
+generado.&lt;/p&gt;
+
+&lt;p&gt;Es decir, este grupo va a ser isomorfo a el producto &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; veces de
+&lt;script type=&quot;math/tex&quot;&gt;\mathbb{Z}&lt;/script&gt; multiplicados a su vez por una cierta cantidad de
+grupos finitos, es decir,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E(\mathbb{Q})\approx
+\overbrace{
+  \mathbb{Z}
+  \oplus\cdots
+  \oplus\mathbb{Z}}^{r\text{ veces}}
+  \oplus\frac{\mathbb{Z}}{p_1^{\lambda_1}\mathbb{Z}}
+  \oplus\cdots
+  \frac{\mathbb{Z}}{p_s^{\lambda_s}}&lt;/script&gt;
+
+&lt;p&gt;En 1922, el matemático británico (1888-1972), representante estudioso
+de la teoría de números, demostró que el conjunto de puntos
+racionales de una curva elíptica &lt;script type=&quot;math/tex&quot;&gt;E\left(\mathbb{Q}\right)&lt;/script&gt; es un
+grupo abeliano generado por un número finito de puntos racionales,
+años más tarde, en 1928, el matemático francés André Weil (1906-1998)
+obtuvo un resultado que extendió la validez del teorema anterior
+sobre el dominio de cualquier cuerpo numérico.&lt;/p&gt;
+
+&lt;h2 id=&quot;curvas-elípticas&quot;&gt;Curvas elípticas&lt;/h2&gt;
+
+&lt;p&gt;Son expresiones de la forma&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\tag{1}
+y^2+
+a_1xy+
+a_3y=
+x^2+
+a_2x^2+
+a_4x+
+a_6,&lt;/script&gt;
+
+&lt;p&gt;donde &lt;script type=&quot;math/tex&quot;&gt;\left\{a_1,a_2,a_3,a_4,a_6\right\}\subset\mathbb{K}&lt;/script&gt; y
+&lt;script type=&quot;math/tex&quot;&gt;(1)&lt;/script&gt; no presenta puntos singulares, en la literatura también es
+llamada &lt;em&gt;ecuación de Weierstrass&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si omitimos cuerpos los cuerpos de característica &lt;script type=&quot;math/tex&quot;&gt;2&lt;/script&gt; y &lt;script type=&quot;math/tex&quot;&gt;3&lt;/script&gt;, se
+obtendría una expresión como&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^2=
+x^3+
+Ax+
+B&lt;/script&gt;
+
+&lt;p&gt;con &lt;script type=&quot;math/tex&quot;&gt;\left\{A,B\right\}\subset\mathbb{K}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si definimos la operación de adición de una curva elíptica, como la
+reflexión sobre el eje &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; del punto de intersección que se obtiene
+al trazar una recta sobre los dos puntos que deseamos adicionar, se
+verificará que el conjunto
+&lt;script type=&quot;math/tex&quot;&gt;\mathcal{O}\eqqcolon\left\{\left(x,y\right)\in\mathbb{K}\times\mathbb{K}\mid\forall x,y\in\mathbb{K}\right\}&lt;/script&gt;
+unido con el punto en cuestión, posee la estructura de grupo abeliano.&lt;/p&gt;
+
+&lt;p&gt;Se desea estudiar ecuaciones del tipo&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^2+
+axy+
+by+
+x^3+
+cx^2+
+dx+
+e=
+0&lt;/script&gt;
+
+&lt;p&gt;con &lt;script type=&quot;math/tex&quot;&gt;\left\{a,b,c,d\right\}\subset\mathbb{K}&lt;/script&gt; que fueron estudiados
+por los matemáticos griegos, y en particular, por Diofanto de
+Alejandría.&lt;/p&gt;
+
+&lt;p&gt;Muy bien, ya hemos presentando a las &lt;strong&gt;curvas elípticas&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Como consecuencia del resultado de Weil, se tiene que cualquier
+solución racional de &lt;script type=&quot;math/tex&quot;&gt;E(\mathbb{Q})&lt;/script&gt; divide en dos partes, una
+parte &lt;em&gt;libre&lt;/em&gt; y otras &lt;em&gt;con torsión&lt;/em&gt;.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E\left(\mathbb{Q}\right)\simeq
+{E\left(\mathbb{Q}\right)}_{\text{tors}}\oplus
+\mathbb{Z}^r&lt;/script&gt;
+
+&lt;p&gt;Pero, se estudiará solo &lt;script type=&quot;math/tex&quot;&gt;{E\left(\mathbb{Q}\right)}_{\text{tors}}&lt;/script&gt;,
+esto es, todos los puntos racionales de orden finito.
+Gracias al&lt;/p&gt;
+
+&lt;h2 id=&quot;teorema-de-nagell-lutz&quot;&gt;Teorema de Nagell-Lutz&lt;/h2&gt;
+
+&lt;p&gt;Sea&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E=
+y^2=
+f\left(x\right)=
+x^3+
+ax^2+
+bx+
+c&lt;/script&gt;
+
+&lt;p&gt;una curva elíptica no singular, con coeficientes
+&lt;script type=&quot;math/tex&quot;&gt;\left\{a,b,c\right\}\subset\mathbb{Z}&lt;/script&gt; y sea&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D=
+-4a^3c+
+a^2b^2+
+18abc-
+4b^3-
+27c^2,&lt;/script&gt;
+
+&lt;p&gt;entonces un punto &lt;script type=&quot;math/tex&quot;&gt;P=\left(x,y\right)&lt;/script&gt; de orden finito cumple que
+&lt;script type=&quot;math/tex&quot;&gt;y=0&lt;/script&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pregunta natural: ¿Será posible validar estos resultados en un cuerpo gaussiano?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Claro, el campo de los números &lt;em&gt;conmensurables&lt;/em&gt; comparte muchas
+propiedades que el de los cuerpos gaussianos.&lt;/p&gt;
+
+&lt;p&gt;El anillo de enteros gaussianos es un dominio euclidiano, de
+factorización única.&lt;/p&gt;
+
+&lt;h2 id=&quot;motivación&quot;&gt;Motivación&lt;/h2&gt;
+
+&lt;p&gt;Para cuáles &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; se cumple que &lt;script type=&quot;math/tex&quot;&gt;1^2+2^2+3^2+\cdots+x^2&lt;/script&gt; es un
+cuadrado perfecto, esta misma formulación matemática expresada en
+curvas elípticas equivale a encontrar las soluciones enteras
+positivas de&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^2=
+\frac{x\left(x+1\right)\left(2x+1\right)}{6}=
+\frac{1}{3}x^3+
+\frac{1}{2}x^2+
+\frac{1}{6}x&lt;/script&gt;
+
+&lt;p&gt;lo que es igual a&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x^3-
+\frac{3}{2}x^2+
+\frac{1}{2}x=
+0.&lt;/script&gt;
+
+&lt;h2 id=&quot;new-fractals-as-images-of-fractals-classic-under-a-complex-polinomial-transformation&quot;&gt;New Fractals as Images of Fractals Classic under a Complex Polinomial Transformation&lt;/h2&gt;
+
+&lt;p&gt;La justificación rigurosa de la existencia de conjuntos fractales
+clásicos tales como el Conjunto de Cantar, Triángulo de Sierpinski,
+Alfombra de Serpienski, Curva de Koch, etc, se fundamenta en base al
+Operador de Hutchinsone.&lt;/p&gt;</content><author><name>Oromion</name></author><category term="algebra" /><category term="UNI" /><category term="elliptic-curves" /><category term="markov-chain" /><summary type="html">XII International Fast WorkShop on Applied and Computational Mathematics Como es costumbre, durante los primeros días de cada año, la Universidad Nacional de Trujillo (UNT) reúne a matemáticos, amigos, estudiantes y profesores de distintas latitudes. En esta edición la Universidad Nacional de Ingeniería estará presente con dos exposiciones Mordell’s Theorem on the Fiele Gaussian y Stability of Singular Linear Systems with associated with a Markov chain. Otras exposiciones interesantes se comentará a lo largo del post.</summary></entry></feed>
